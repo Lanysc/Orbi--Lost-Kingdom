@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://biq2dy7vg7x0l"]
+
+[ext_resource type="Script" path="res://scenes/game_object/box/box.gd" id="1_6h8bh"]
+[ext_resource type="Script" path="res://scenes/component/velocity/velocity_component.gd" id="1_v0u2a"]
+[ext_resource type="Texture2D" uid="uid://tsv8mmhrf6vv" path="res://resources/assets/other/Tiles/tile_0026.png" id="2_edwpw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ah14j"]
+size = Vector2(18, 18)
+
+[node name="Box" type="CharacterBody2D" groups=["box"]]
+collision_layer = 4
+script = ExtResource("1_6h8bh")
+
+[node name="VelocityComponent" type="Node" parent="."]
+script = ExtResource("1_v0u2a")
+max_speed = 250
+acceleration = 20.0
+jump_time_to_peak = 0.6
+jump_time_to_descent = 0.8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ah14j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_edwpw")
