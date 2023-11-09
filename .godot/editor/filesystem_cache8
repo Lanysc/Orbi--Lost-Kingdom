@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699465279
+::res://::1699532803
 icon.svg::CompressedTexture2D::6850954975639949343::1693493938::1699447597::1::::<><>::
-::res://resources/::1699465200
-::res://resources/assets/::1699465200
+::res://resources/::1699465387
+::res://resources/assets/::1699465387
 ::res://resources/assets/dialog_box/::1699447611
 Dialog_Box(16 x 16).png::CompressedTexture2D::9111004597179748111::1696016681::1699447611::1::::<><>::
-::res://resources/assets/other/::1699450443
+::res://resources/assets/other/::1699465387
 ::res://resources/assets/other/Tilemap/::1699450443
 tilemap-backgrounds.png::CompressedTexture2D::5829864466019745270::1696681636::1699449684::1::::<><>::
 tilemap-backgrounds_packed.png::CompressedTexture2D::3473118870057450084::1696681636::1699449684::1::::<><>::
@@ -13,7 +13,7 @@ tilemap-characters.png::CompressedTexture2D::902015213314652850::1696681636::169
 tilemap-characters_packed.png::CompressedTexture2D::3912652137391143967::1696681636::1699449684::1::::<><>::
 tilemap.png::CompressedTexture2D::7905606178741424527::1696681636::1699449684::1::::<><>::
 tilemap_packed.png::CompressedTexture2D::5679540052467466459::1696681636::1699449684::1::::<><>::
-::res://resources/assets/other/Tiles/::1699450443
+::res://resources/assets/other/Tiles/::1699465387
 tile_0000 2.png::CompressedTexture2D::5070174314960684459::1667037352::1699465364::1::::<><>::
 tile_0000.png::CompressedTexture2D::2464513651459301046::1696681628::1699449684::1::::<><>::
 tile_0001.png::CompressedTexture2D::2978224671148440182::1696681628::1699449684::1::::<><>::
@@ -306,7 +306,7 @@ Idle (34x28).png::CompressedTexture2D::1921408753405956708::1693589256::16994475
 Jump (34x28).png::CompressedTexture2D::336302974173265091::1693596805::1699447598::1::::<><>::
 Run (34x28).png::CompressedTexture2D::6396913997885505712::1693596789::1699447600::1::::<><>::
 ::res://resources/base_scripts/::1699296136
-::res://scenes/::1699451323
+::res://scenes/::1699470883
 ::res://scenes/component/::1699450443
 ::res://scenes/component/dialog_box/::1699296147
 dialog_box.gd::GDScript::-1::1696016682::0::1::::<>MarginContainer<>::
@@ -326,17 +326,15 @@ interaction_area.tscn::PackedScene::8783469609065351191::1696016682::0::1::::<><
 ::res://scenes/component/velocity/::1699296147
 velocity_component.gd::GDScript::-1::1696016682::0::1::::VelocityComponent<>Node<>::
 velocity_component.tscn::PackedScene::1170731206916873267::1695843387::0::1::::<><>::res://scenes/component/velocity/velocity_component.gd
-::res://scenes/game_object/::1699451323
-::res://scenes/game_object/box/::1699451323
-box.gd::GDScript::-1::1699451317::0::1::::<>CharacterBody2D<>::
-box.tscn::PackedScene::2982607504006317625::1699451317::0::1::::<><>::res://scenes/game_object/box/box.gd<>res://scenes/component/velocity/velocity_component.gd<>uid://tsv8mmhrf6vv::::res://resources/assets/other/Tiles/tile_0026.png
+::res://scenes/game_object/::1699470883
+::res://scenes/game_object/box/::1699470894
+box.gd::GDScript::-1::1699470893::0::1::::<>CharacterBody2D<>::
+box.tscn::PackedScene::2982607504006317625::1699470894::0::1::::<><>::res://scenes/game_object/box/box.gd<>res://scenes/component/velocity/velocity_component.gd<>uid://tsv8mmhrf6vv::::res://resources/assets/other/Tiles/tile_0026.png
 ::res://scenes/game_object/game_camera/::1699296147
 game_camera.gd::GDScript::-1::1696016682::0::1::::<>Camera2D<>::
 game_camera.tscn::PackedScene::3944588838914358399::1693942707::0::1::::<><>::res://scenes/game_object/game_camera/game_camera.gd
-::res://scenes/game_object/player/::1699450369
-player.gd::GDScript::-1::1699450041::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1690570611546923637::1699450356::0::1::::<><>::res://scenes/game_object/player/player.gd<>uid://qxd1imapqwdf::::res://scenes/component/velocity/velocity_component.tscn<>uid://dgsgy3bquo7hm::::res://resources/assets/other/Tiles/Characters/tile_0000.png
-::res://scenes/main/::1699450443
-level_tester.tscn::PackedScene::8708370308795889853::1699450356::0::1::::<><>::uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn
-::res://scripts/::1699296136
-weighted_table.gd::GDScript::-1::1696016682::0::1::::WeightedTable<>RefCounted<>::
+::res://scenes/game_object/player/::1699470894
+player.gd::GDScript::-1::1699470878::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1690570611546923637::1699470894::0::1::::<><>::res://scenes/game_object/player/player.gd<>uid://qxd1imapqwdf::::res://scenes/component/velocity/velocity_component.tscn<>uid://dgsgy3bquo7hm::::res://resources/assets/other/Tiles/Characters/tile_0000.png
+::res://scenes/main/::1699470894
+level_tester.tscn::PackedScene::8708370308795889853::1699470894::0::1::::<><>::uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn

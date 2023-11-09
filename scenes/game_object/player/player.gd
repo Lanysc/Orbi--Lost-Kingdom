@@ -60,8 +60,6 @@ func on_interact_area_exited(body):
 
 func handle_interact():
 	if Input.is_action_just_pressed("interact"):
-		print("entrei 1")
-		
 		if !boxes_in_area.is_empty() and picked_box == null:
 			picked_box = boxes_in_area.front()
 			picked_box.change_state()
