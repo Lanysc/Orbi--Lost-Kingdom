@@ -1,5 +1,10 @@
+res://scenes/game_object/gate/gate.tscn
+res://scenes/game_object/gate/gate.gd
 res://scenes/main/level_tester.tscn
-res://scenes/game_object/player/player.tscn
 res://scenes/game_object/box/box.tscn
+res://scenes/game_object/player/player.tscn
+res://scenes/game_object/pressure_plate/pressure_plate.tscn
+res://scenes/game_object/pressure_plate/pressure_plate.gd
+res://scenes/main/level_4.tscn
 res://scenes/game_object/player/player.gd
 res://scenes/game_object/box/box.gd

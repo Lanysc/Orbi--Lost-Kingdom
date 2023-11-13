@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c75n7mhwpje8p"]
+
+[ext_resource type="Script" path="res://scenes/game_object/gate/gate.gd" id="1_ckqrx"]
+[ext_resource type="Texture2D" uid="uid://dg6oi54dgbafs" path="res://resources/assets/other/Tiles/tile_0072.png" id="2_xko0k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ikwhe"]
+size = Vector2(15, 56)
+
+[node name="Gate" type="StaticBody2D"]
+script = ExtResource("1_ckqrx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 28)
+shape = SubResource("RectangleShape2D_ikwhe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 28)
+scale = Vector2(1, 3.11111)
+texture = ExtResource("2_xko0k")

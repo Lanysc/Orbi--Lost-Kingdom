@@ -12,7 +12,8 @@ enum State {
 @onready var visuals = $Visuals
 @onready var velocity_component = $VelocityComponent
 @onready var animation_player = $AnimationPlayer
-@onready var interact_area = $InteractArea
+@onready var interact_area = %InteractArea
+@onready var danger_area = $DangerArea
 
 var jump_count: int = 0
 var current_state: State = State.IDLE
@@ -20,9 +21,11 @@ var current_weapon
 var picked_box: CharacterBody2D
 var boxes_in_area = []
 
+
 func _ready():
 	interact_area.body_entered.connect(on_interact_area_entered)
 	interact_area.body_exited.connect(on_interact_area_exited)
+	danger_area.body_entered.connect(on_danger_area_entered)
 
 
 func _process(_delta):
@@ -56,6 +59,14 @@ func on_interact_area_entered(body):
 func on_interact_area_exited(body):
 	if body.is_in_group("box"):
 		boxes_in_area.erase(body)
+
+
+func on_danger_area_entered(body):
+	restart_level()
+
+
+func restart_level():
+	get_tree().reload_current_scene()
 
 
 func handle_interact():

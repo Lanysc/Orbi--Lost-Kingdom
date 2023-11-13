@@ -12,6 +12,7 @@ size = Vector2(18, 18)
 
 [node name="Box" type="CharacterBody2D" groups=["box"]]
 collision_layer = 8
+collision_mask = 25
 script = ExtResource("1_6h8bh")
 
 [node name="VelocityComponent" type="Node" parent="."]
@@ -19,7 +20,7 @@ script = ExtResource("1_v0u2a")
 max_speed = 250
 acceleration = 20.0
 jump_time_to_peak = 0.6
-jump_time_to_descent = 0.8
+jump_time_to_descent = 0.6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ah14j")
@@ -33,3 +34,8 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_judu4")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, -4)
+target_position = Vector2(0, 14)
+collision_mask = 2
