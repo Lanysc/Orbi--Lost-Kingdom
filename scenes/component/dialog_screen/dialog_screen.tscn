@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://bidujpy2sw1sv"]
+
+[ext_resource type="Script" path="res://scenes/component/dialog_screen/dialog_screen.gd" id="1_xopmr"]
+[ext_resource type="Texture2D" uid="uid://c4uwh0aeeov2f" path="res://icon.svg" id="2_pkk75"]
+[ext_resource type="FontFile" uid="uid://dboew7qv6uucd" path="res://resources/assets/font/equipment-pro-v1.1/EquipmentPro.otf" id="3_tm82f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hdbsf"]
+line_spacing = 2.08165e-12
+font = ExtResource("3_tm82f")
+shadow_color = Color(0, 0, 0, 0.6)
+
+[node name="DialogScreen" type="Control"]
+custom_minimum_size = Vector2(320, 80)
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -100.0
+offset_right = 160.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_xopmr")
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.580392)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackgroundColor"]
+custom_minimum_size = Vector2(312, 72)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -36.0
+offset_right = 156.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="BackgroundColor/HBoxContainer"]
+custom_minimum_size = Vector2(72, 2.08165e-12)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="BackgroundColor/HBoxContainer/ColorRect"]
+custom_minimum_size = Vector2(70, 72)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -36.0
+offset_right = 35.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pkk75")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackgroundColor/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name" type="Label" parent="BackgroundColor/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Orbi"
+label_settings = SubResource("LabelSettings_hdbsf")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Dialog" type="RichTextLabel" parent="BackgroundColor/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/normal_font = ExtResource("3_tm82f")
+theme_override_font_sizes/normal_font_size = 16
+text = "Hmm, Parece que leva para o Nivel 1
+Pressione W para entrar no Portal...
+                                      Enter"

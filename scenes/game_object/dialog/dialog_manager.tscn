@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://sfo7csaedd0a"]
+
+[ext_resource type="Script" path="res://scenes/game_object/dialog/dialog_manager.gd" id="1_8cqqt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdskr"]
+size = Vector2(36, 25)
+
+[node name="DialogManager" type="Node2D"]
+script = ExtResource("1_8cqqt")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_vdskr")

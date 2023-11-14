@@ -1,3 +1,6 @@
+res://scenes/component/level_manager
+res://scenes/game_object/dialog
+res://scenes/component/level_changer
 res://scenes/game_object/gate
 res://scenes/game_object/pressure_plate
 res://scenes/main
