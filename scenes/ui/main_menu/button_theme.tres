@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://bij0ybc76tvdt"]
+
+[ext_resource type="FontFile" uid="uid://bywinlg848un" path="res://resources/assets/font/equipment-pro-v1.1/EquipmentPro.ttf" id="1_tbqx6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kg2gs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ygvp3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oi17e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixj7m"]
+
+[resource]
+default_font = ExtResource("1_tbqx6")
+default_font_size = 18
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(0.924498, 0.925066, 0.0911686, 1)
+Button/colors/font_hover_color = Color(0.988235, 0.992157, 0.682353, 1)
+Button/colors/font_pressed_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+Button/font_sizes/font_size = 18
+Button/fonts/font = ExtResource("1_tbqx6")
+Button/styles/focus = SubResource("StyleBoxEmpty_kg2gs")
+Button/styles/hover = SubResource("StyleBoxEmpty_ygvp3")
+Button/styles/normal = SubResource("StyleBoxEmpty_oi17e")
+Button/styles/pressed = SubResource("StyleBoxEmpty_ixj7m")

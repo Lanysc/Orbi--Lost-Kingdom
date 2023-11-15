@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Orbi: Lost Kingdom"
-run/main_scene="res://scenes/main/level_tester.tscn"
+run/main_scene="res://scenes/ui/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -1,3 +1,6 @@
+Button
+VBoxContainer
+Control
 Node2D
 CollisionShape2D
 Area2D
@@ -5,7 +8,6 @@ Node
 CanvasLayer
 RichTextLabel
 Label
-VBoxContainer
 TextureRect
 ColorRect
 HBoxContainer

@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg0e50dn2nlb0"]
+
+[ext_resource type="Script" path="res://scenes/ui/main_menu/main_menu.gd" id="1_5h5o7"]
+[ext_resource type="Theme" uid="uid://bij0ybc76tvdt" path="res://scenes/ui/main_menu/button_theme.tres" id="2_1vtgt"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5h5o7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -98.0
+offset_right = 76.0
+offset_bottom = -10.0
+grow_vertical = 0
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_1vtgt")
+text = "Iniciar"
+
+[node name="LevelSelectorButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_1vtgt")
+text = "Niveis"
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_1vtgt")
+text = "Opcoes"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_1vtgt")
+text = "Sair"
