@@ -1,0 +1,18 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmtlcxe3a4jri"]
+
+[ext_resource type="Script" path="res://scenes/ui/sound_button/sound_button.gd" id="1_gkb72"]
+[ext_resource type="PackedScene" uid="uid://cn0axbsqxo8a1" path="res://scenes/component/audio/random_audio_stream_player_component.tscn" id="2_rrg8g"]
+[ext_resource type="AudioStream" uid="uid://sfynefl0xrjo" path="res://resources/assets/audio/click1.ogg" id="3_gx3fp"]
+[ext_resource type="AudioStream" uid="uid://1kubhjh75p6s" path="res://resources/assets/audio/click2.ogg" id="4_td4vc"]
+[ext_resource type="AudioStream" uid="uid://b7ufp7o38fvyw" path="res://resources/assets/audio/click3.ogg" id="5_8qt06"]
+[ext_resource type="AudioStream" uid="uid://b3jbm2nq3r7ug" path="res://resources/assets/audio/click4.ogg" id="6_orpwd"]
+[ext_resource type="AudioStream" uid="uid://cgmsbrwo4tfm7" path="res://resources/assets/audio/click5.ogg" id="7_ggh5x"]
+
+[node name="SoundButton" type="Button"]
+offset_right = 6.0
+offset_bottom = 6.0
+text = "Sound Button"
+script = ExtResource("1_gkb72")
+
+[node name="RandomAudioStreamPlayerComponent" parent="." instance=ExtResource("2_rrg8g")]
+streams = Array[AudioStream]([ExtResource("3_gx3fp"), ExtResource("4_td4vc"), ExtResource("5_8qt06"), ExtResource("6_orpwd"), ExtResource("7_ggh5x")])

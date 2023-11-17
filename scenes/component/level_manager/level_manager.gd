@@ -12,7 +12,7 @@ func _ready():
 	area_2d.body_exited.connect(_on_Area2D_body_exited)
 
 
-func _process(delta):
+func _process(_delta):
 	if player_inside and Input.is_key_pressed(KEY_W):  # Verifica se 'W' é pressionado
 		change_level()
 

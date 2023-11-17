@@ -13,6 +13,7 @@ var is_rigid := true
 func _ready():
 	area_2d.body_exited.connect(on_body_exited)
 
+
 func _process(_delta):
 	if is_picked_up:
 		var player = get_tree().get_first_node_in_group("player")
@@ -23,7 +24,8 @@ func _process(_delta):
 		velocity_component.move(self)
 		check_ray_cast_collision()
 
-func on_body_exited(body: Node2D):
+
+func on_body_exited(_body: Node2D):
 	if !is_picked_up:
 		set_collision_layer_value(4, true)
 		set_collision_layer_value(3, false)
@@ -37,6 +39,7 @@ func handle_velocity():
 		movement_x = max(movement_x - 0.04, 0.0)
 	elif movement_x < 0:
 		movement_x = min(movement_x + 0.04, 0.0)
+
 
 func change_state():
 	set_collision_layer_value(4, false)

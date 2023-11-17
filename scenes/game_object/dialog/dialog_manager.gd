@@ -22,7 +22,8 @@ func _ready():
 	area_2d.body_entered.connect(on_body_entered)
 	area_2d.body_exited.connect(on_body_exited)
 
-func _process(delta):
+
+func _process(_delta):
 	if Input.is_action_pressed("interact") and _player_inside:
 		_new_dialog = dialog_screen.instantiate()
 		_new_dialog.name = "DialogScreen"  # Define um nome para o nó
@@ -30,11 +31,11 @@ func _process(delta):
 		hud.add_child(_new_dialog)
 
  
-func on_body_entered(body: Node2D):
+func on_body_entered(_body: Node2D):
 	_player_inside = true
 
 
-func on_body_exited(body: Node2D):
+func on_body_exited(_body: Node2D):
 	_player_inside = false
 	# Itera sobre todos os filhos de 'hud' e os remove
 	if hud.get_children().size() > 0:

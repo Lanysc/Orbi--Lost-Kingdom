@@ -61,7 +61,7 @@ func on_interact_area_exited(body):
 		boxes_in_area.erase(body)
 
 
-func on_danger_area_entered(body):
+func on_danger_area_entered(_body):
 	restart_level()
 
 

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b26b4h4x8ilgk"]
+
+[ext_resource type="AudioStream" uid="uid://lonckea7so47" path="res://assets/audio/the-epic-adventure-131399.mp3" id="1_uc03l"]
+[ext_resource type="Script" path="res://scenes/autoload/music_player.gd" id="2_trmax"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_uc03l")
+volume_db = -12.0
+autoplay = true
+bus = &"music"
+script = ExtResource("2_trmax")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true

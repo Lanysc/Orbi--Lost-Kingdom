@@ -14,7 +14,7 @@ func _ready():
 	_initialize_dialog()
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_pressed("ui_accept") and _dialog.visible_ratio < 1:
 		_step = 0.01
 		return
