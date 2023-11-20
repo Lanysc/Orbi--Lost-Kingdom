@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700507508
+::res://::1700507740
 default_bus_layout.tres::AudioBusLayout::248145628365671683::1700141485::0::1::::<><>::
 icon.svg::CompressedTexture2D::6850954975639949343::1693493938::1700135760::1::::<><>::
 ::res://addons/::1700483360
@@ -573,9 +573,9 @@ tile_0026.png::CompressedTexture2D::1428904531448527073::1696681636::1699449684:
 ::res://resources/logo/::1700488109
 logo.png::CompressedTexture2D::5603079543175292005::1688891700::1700488102::1::::<><>::
 ravencorp.png::CompressedTexture2D::4318991877243661396::1700487717::1700487717::1::::<><>::
-::res://resources/theme/::1700491564
+::res://resources/theme/::1700507660
 Rockboxcond12.ttf::FontFile::9145915842387908273::1700141644::1700141644::1::::<><>::
-theme.tres::Theme::3659864492724558115::1700491564::0::1::::<><>::uid://d4fr820h7m3dr::::res://resources/ui/ui.png<>uid://d3kl5ry1i64ph::::res://resources/theme/Rockboxcond12.ttf
+theme.tres::Theme::3659864492724558115::1700507660::0::1::::<><>::uid://d4fr820h7m3dr::::res://resources/ui/ui.png<>uid://d3kl5ry1i64ph::::res://resources/theme/Rockboxcond12.ttf
 ::res://resources/ui/::1700144128
 5.1 screen_transition.png::CompressedTexture2D::4172503649867184688::1700144120::1700144121::1::::<><>::
 ui.png::CompressedTexture2D::9206152982540311783::1700144120::1700144121::1::::<><>::
@@ -618,10 +618,13 @@ velocity_component.tscn::PackedScene::1170731206916873267::1695843387::0::1::::<
 ::res://scenes/game_object/box/::1700232233
 box.gd::GDScript::-1::1700156569::0::1::::<>CharacterBody2D<>::
 box.tscn::PackedScene::2982607504006317625::1700232233::0::1::::<><>::res://scenes/game_object/box/box.gd<>res://scenes/component/velocity/velocity_component.gd<>uid://tsv8mmhrf6vv
-::res://scenes/game_object/dialog/::1700506078
-dialog_manager.gd::GDScript::-1::1700147110::0::1::::<>Node2D<>::
-dialog_manager.tscn::PackedScene::1274628390417216310::1700488057::0::1::::<><>::res://scenes/game_object/dialog/dialog_manager.gd
-::res://scenes/game_object/dialog/sign/::1700506078
+::res://scenes/game_object/dialog/::1700507697
+::res://scenes/game_object/dialog/sign/::1700507681
+sign_dialog_manager.gd::GDScript::-1::1700147110::0::1::::<>Node2D<>::
+sign_dialog_manager.tscn::PackedScene::1274628390417216310::1700507681::0::1::::<><>::res://scenes/game_object/dialog/sign/sign_dialog_manager.gd
+::res://scenes/game_object/dialog/story/::1700507740
+sign_dialog_manager.tscn::PackedScene::5140960115054523635::1700507697::0::1::::<><>::res://scenes/game_object/dialog/sign/sign_dialog_manager.gd
+story_dialog_manager.gd::GDScript::-1::1700507697::0::1::::<>Node2D<>::
 ::res://scenes/game_object/game_camera/::1699296147
 game_camera.gd::GDScript::-1::1696016682::0::1::::<>Camera2D<>::
 game_camera.tscn::PackedScene::3944588838914358399::1693942707::0::1::::<><>::res://scenes/game_object/game_camera/game_camera.gd
@@ -638,7 +641,7 @@ pressure_plate.tscn::PackedScene::5070066828727239482::1699969453::0::1::::<><>:
 level_selector_tester.tscn::PackedScene::5589523699517913444::1700488057::0::1::::<><>::uid://cm6hgvjj0h3rb
 level_tester.tscn::PackedScene::8708370308795889853::1700488057::0::1::::<><>::uid://4rkrho6cqbxk
 ::res://scenes/main/levels/::1700506065
-level_1.tscn::PackedScene::5565635392139308513::1700506054::0::1::::<><>::uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://sfo7csaedd0a::::res://scenes/game_object/dialog/dialog_manager.tscn
+level_1.tscn::PackedScene::5565635392139308513::1700506054::0::1::::<><>::uid://4rkrho6cqbxk
 level_2.tscn::PackedScene::9057742337327408996::1700488057::0::1::::<><>::uid://4rkrho6cqbxk
 level_3.tscn::PackedScene::5405762002355914908::1700488057::0::1::::<><>::uid://4rkrho6cqbxk
 level_4.tscn::PackedScene::5250563183261917300::1700488057::0::1::::<><>::uid://4rkrho6cqbxk
@@ -650,7 +653,7 @@ level_9.tscn::PackedScene::4712381296740490986::1700488058::0::1::::<><>::uid://
 level_10.tscn::PackedScene::3137445010721949730::1700488058::0::1::::<><>::uid://4rkrho6cqbxk
 level_11.tscn::PackedScene::8351944487489866633::1700488057::0::1::::<><>::uid://4rkrho6cqbxk
 ::res://scenes/splash/::1700502655
-splash_container.tscn::PackedScene::7512222923207239398::1700502655::0::1::::<><>::res://addons/awesome_splash/core/SplashContainer.gd<>uid://cg0e50dn2nlb0::::res://scenes/ui/main_menu/main_menu.tscn<>uid://dl2v33c3p3coa::::res://scenes/ui/splash/demo_collection/dark/splash_screen.tscn<>uid://dfhwfsoinmcxh::::res://scenes/ui/splash/demo_collection/circle_jump_02/splash_screen.tscn
+splash_container.tscn::PackedScene::7512222923207239398::1700502655::0::1::::<><>::res://addons/awesome_splash/core/SplashContainer.gd<>uid://cg0e50dn2nlb0
 ::res://scenes/ui/::1700489260
 ::res://scenes/ui/main_menu/::1700488058
 button_theme.tres::Theme::2968071673565867349::1700135300::0::1::::<><>::uid://bywinlg848un

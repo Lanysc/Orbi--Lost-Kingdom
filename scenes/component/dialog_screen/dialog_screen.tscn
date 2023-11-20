@@ -90,6 +90,11 @@ theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
 theme_override_fonts/normal_font = ExtResource("3_tm82f")
 theme_override_font_sizes/normal_font_size = 16
-text = "Hmm, Parece que leva para o Nivel 1
-Pressione W para entrar no Portal...
-                                      Enter"
+text = "Ola forasteiro"
+
+[node name="Enter" type="Label" parent="BackgroundColor/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Enter..."
+label_settings = SubResource("LabelSettings_hdbsf")
+horizontal_alignment = 2
+vertical_alignment = 1

@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://sfo7csaedd0a"]
 
-[ext_resource type="Script" path="res://scenes/game_object/dialog/dialog_manager.gd" id="1_8cqqt"]
+[ext_resource type="Script" path="res://scenes/game_object/dialog/sign/sign_dialog_manager.gd" id="1_d51k1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vdskr"]
 size = Vector2(36, 25)
 
-[node name="DialogManager" type="Node2D"]
-script = ExtResource("1_8cqqt")
+[node name="SignDialogManager" type="Node2D"]
+script = ExtResource("1_d51k1")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 0

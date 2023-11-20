@@ -1,3 +1,8 @@
-res://scenes/splash/splash_container.tscn
 res://resources/theme/theme.tres
+res://scenes/game_object/dialog/sign/dialog_manager.tscn
+res://scenes/game_object/dialog/sign/sign_dialog_manager.tscn
+res://scenes/game_object/dialog/story/story_dialog_manager.tscn
+res://scenes/game_object/dialog/sign/sign_dialog_manager.gd
 res://scenes/main/levels/level_1.tscn
+res://scenes/splash/splash_container.tscn
+res://scenes/component/dialog_screen/dialog_screen.tscn
