@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bvifw7qaqe5yg"]
+[gd_scene load_steps=9 format=3 uid="uid://bvifw7qaqe5yg"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_6tywb"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_sx2xy"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="3_volce"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="3_wvfdu"]
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="4_muduf"]
 
@@ -589,6 +590,10 @@ tile_set = SubResource("TileSet_jyb2l")
 cell_quadrant_size = 18
 format = 2
 layer_0/tile_data = PackedInt32Array(524293, 524288, 3, 524294, 524288, 3, 524295, 524288, 3)
+
+[node name="LevelManager" parent="." instance=ExtResource("3_volce")]
+position = Vector2(447, 160)
+level_path = "res://scenes/main/levels/level_6.tscn"
 
 [node name="Player" parent="." instance=ExtResource("3_wvfdu")]
 position = Vector2(232, 228)

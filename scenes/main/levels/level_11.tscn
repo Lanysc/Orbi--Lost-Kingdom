@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dq80knemx32cj"]
+[gd_scene load_steps=11 format=3 uid="uid://dq80knemx32cj"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_kvxxj"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_mbpsk"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="4_teaqq"]
 [ext_resource type="PackedScene" uid="uid://ceh8i3qauoesw" path="res://scenes/game_object/pressure_plate/pressure_plate.tscn" id="5_uyfnt"]
 [ext_resource type="PackedScene" uid="uid://c75n7mhwpje8p" path="res://scenes/game_object/gate/gate.tscn" id="6_8f8ik"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="8_w43tn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_mbpsk")
@@ -584,6 +585,10 @@ layer_0/tile_data = PackedInt32Array(589820, 131072, 0, 589821, 131072, 0, 58982
 [node name="DangerTileMap" parent="." instance=ExtResource("3_urmtj")]
 position = Vector2(134, -51)
 layer_0/tile_data = PackedInt32Array(851973, 524288, 3, 851974, 524288, 3, 851975, 524288, 3)
+
+[node name="LevelManager" parent="." instance=ExtResource("8_w43tn")]
+position = Vector2(466, 158)
+level_path = "res://scenes/main/level_selector_tester.tscn"
 
 [node name="Player" parent="." instance=ExtResource("3_8c3tp")]
 position = Vector2(143, 78)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cjaud0uwig0u7"]
+[gd_scene load_steps=8 format=3 uid="uid://cjaud0uwig0u7"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_tx22d"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_nki05"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="3_83p13"]
 [ext_resource type="PackedScene" uid="uid://dih8fo0d6qkr8" path="res://scenes/component/tile_map/danger_tile_map.tscn" id="4_gd2tp"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="5_e5hiu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_nki05")
@@ -579,6 +580,10 @@ tile_set = SubResource("TileSet_v3boa")
 cell_quadrant_size = 18
 format = 2
 layer_0/tile_data = PackedInt32Array(524290, 65536, 0, 524291, 131072, 0, 524292, 131072, 0, 524301, 65536, 0, 524302, 131072, 0, 524303, 131072, 0, 524304, 196608, 0, 524305, 589824, 1, 131089, 589824, 1, 196625, 589824, 1, 262161, 589824, 1, 327697, 589824, 1, 393233, 589824, 1, 458769, 589824, 1, 589826, 589824, 1, 589827, 589824, 1, 589828, 589824, 1, 589829, 589824, 1, 589830, 589824, 1, 589831, 589824, 1, 589832, 589824, 1, 589833, 589824, 1, 589834, 589824, 1, 589835, 589824, 1, 589836, 589824, 1, 589837, 589824, 1, 589838, 589824, 1, 589839, 589824, 1, 589840, 589824, 1, 589841, 589824, 1, 65538, 589824, 1, 65539, 589824, 1, 65540, 589824, 1, 65541, 589824, 1, 65542, 589824, 1, 65543, 589824, 1, 65544, 589824, 1, 65545, 589824, 1, 65546, 589824, 1, 65547, 589824, 1, 65548, 589824, 1, 65549, 589824, 1, 65550, 589824, 1, 65551, 589824, 1, 65552, 589824, 1, 65553, 589824, 1, 458755, 262144, 6, 524293, 131072, 0, 458758, 393216, 1, 393222, 1179648, 2, 393221, 1114112, 2, 393223, 1245184, 2, 327685, 1114112, 0, 327686, 1179648, 0, 327687, 1245184, 0, 458757, 1179648, 4, 65537, 589824, 1, 131073, 589824, 1, 196609, 589824, 1, 262145, 589824, 1, 327681, 589824, 1, 393217, 589824, 1, 458753, 589824, 1, 524289, 589824, 1, 589825, 589824, 1, 393230, 917504, 1, 458766, 917504, 3, 458765, 786432, 3, 393229, 786432, 1, 327693, 786432, 0, 327694, 851968, 0, 327695, 786432, 0, 393231, 786432, 1, 458767, 786432, 3, 524294, 196608, 0, 458761, 393216, 7, 458764, 393216, 7)
+
+[node name="LevelManager" parent="." instance=ExtResource("5_e5hiu")]
+position = Vector2(386, 188)
+level_path = "res://scenes/main/levels/level_4.tscn"
 
 [node name="Player" parent="." instance=ExtResource("3_83p13")]
 position = Vector2(198, 202)

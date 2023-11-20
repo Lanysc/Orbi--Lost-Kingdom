@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8eyh4txoe4n3"]
+[gd_scene load_steps=10 format=3 uid="uid://b8eyh4txoe4n3"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_503fu"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="2_a1qht"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_vgv2f"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="4_b6e3q"]
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="5_i2xig"]
@@ -572,6 +573,10 @@ sources/0 = SubResource("TileSetAtlasSource_6qh2k")
 position = Vector2(-5, 57)
 
 [node name="GameManagerComponent" parent="." instance=ExtResource("1_503fu")]
+
+[node name="LevelManager" parent="." instance=ExtResource("2_a1qht")]
+position = Vector2(386, 190)
+level_path = "res://scenes/main/levels/level_10.tscn"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(296, 177)

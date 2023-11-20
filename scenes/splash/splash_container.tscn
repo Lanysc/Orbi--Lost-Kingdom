@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfa8hjm5ggwne"]
+
+[ext_resource type="Script" path="res://addons/awesome_splash/core/SplashContainer.gd" id="1_qtq4d"]
+[ext_resource type="PackedScene" uid="uid://cg0e50dn2nlb0" path="res://scenes/ui/main_menu/main_menu.tscn" id="2_ejsow"]
+[ext_resource type="PackedScene" uid="uid://dl2v33c3p3coa" path="res://scenes/ui/splash/demo_collection/dark/splash_screen.tscn" id="3_1d0bl"]
+[ext_resource type="PackedScene" uid="uid://dfhwfsoinmcxh" path="res://scenes/ui/splash/demo_collection/circle_jump_02/splash_screen.tscn" id="4_yk2ov"]
+
+[node name="SplashContainer" type="Node2D"]
+script = ExtResource("1_qtq4d")
+custom_node/type = 0
+custom_node/default_time = 1.0
+skip/type = 0
+move_to_scene = ExtResource("2_ejsow")
+trainsition_type = 5
+min_pixel = 1.0
+max_pixel = 128.0
+transition_time = 1.0
+
+[node name="SplashCircleJump02" parent="." instance=ExtResource("4_yk2ov")]
+logo_path = "res://resources/logo/logo.png"
+
+[node name="SplashDark" parent="." instance=ExtResource("3_1d0bl")]
+logo_path = "res://resources/logo/ravencorp.png"
+title = "Raven Corp"
+description = "By: Dablin"
+duration = 5.0

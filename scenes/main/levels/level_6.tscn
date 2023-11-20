@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://e82fohxap4dx"]
+[gd_scene load_steps=9 format=3 uid="uid://e82fohxap4dx"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_wmtp2"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_xvgk7"]
 [ext_resource type="PackedScene" uid="uid://dih8fo0d6qkr8" path="res://scenes/component/tile_map/danger_tile_map.tscn" id="3_2l241"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="3_nsam8"]
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="4_r0kl5"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="6_ohgig"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_xvgk7")
@@ -581,11 +582,14 @@ cell_quadrant_size = 18
 format = 2
 layer_0/tile_data = PackedInt32Array(524290, 65536, 0, 524291, 131072, 0, 524292, 131072, 0, 524301, 65536, 0, 524302, 131072, 0, 524303, 131072, 0, 524304, 196608, 0, 524305, 589824, 1, 131089, 589824, 1, 196625, 589824, 1, 262161, 589824, 1, 327697, 589824, 1, 393233, 589824, 1, 458769, 589824, 1, 589826, 589824, 1, 589827, 589824, 1, 589828, 589824, 1, 589829, 589824, 1, 589830, 589824, 1, 589831, 589824, 1, 589832, 589824, 1, 589833, 589824, 1, 589834, 589824, 1, 589835, 589824, 1, 589836, 589824, 1, 589837, 589824, 1, 589838, 589824, 1, 589839, 589824, 1, 589840, 589824, 1, 589841, 589824, 1, 65538, 589824, 1, 65539, 589824, 1, 65540, 589824, 1, 65541, 589824, 1, 65542, 589824, 1, 65543, 589824, 1, 65544, 589824, 1, 65545, 589824, 1, 65546, 589824, 1, 65547, 589824, 1, 65548, 589824, 1, 65549, 589824, 1, 65550, 589824, 1, 65551, 589824, 1, 65552, 589824, 1, 65553, 589824, 1, 458755, 262144, 6, 524293, 131072, 0, 393222, 1179648, 2, 393221, 1114112, 2, 393223, 1245184, 2, 327685, 1114112, 0, 327686, 1179648, 0, 327687, 1245184, 0, 458757, 1179648, 4, 65537, 589824, 1, 131073, 589824, 1, 196609, 589824, 1, 262145, 589824, 1, 327681, 589824, 1, 393217, 589824, 1, 458753, 589824, 1, 524289, 589824, 1, 589825, 589824, 1, 393230, 917504, 1, 458766, 917504, 3, 458765, 786432, 3, 393229, 786432, 1, 327693, 786432, 0, 327694, 851968, 0, 327695, 786432, 0, 393231, 786432, 1, 458767, 786432, 3, 524294, 196608, 0, 458758, 1048576, 6)
 
-[node name="Box2" parent="TileMap" instance=ExtResource("4_r0kl5")]
-position = Vector2(59, 131)
-
 [node name="Player" parent="." instance=ExtResource("3_nsam8")]
 position = Vector2(235, 202)
+
+[node name="Box2" parent="." instance=ExtResource("4_r0kl5")]
+position = Vector2(184, 202)
+
+[node name="Box3" parent="." instance=ExtResource("4_r0kl5")]
+position = Vector2(183, 175)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(296, 177)
@@ -594,3 +598,7 @@ zoom = Vector2(0.9, 0.9)
 [node name="DangerTileMap2" parent="." instance=ExtResource("3_2l241")]
 position = Vector2(125, 71)
 layer_0/tile_data = PackedInt32Array(524295, 524288, 3, 524296, 524288, 3, 524297, 524288, 3, 524298, 524288, 3, 524299, 524288, 3, 524300, 524288, 3)
+
+[node name="LevelManager" parent="." instance=ExtResource("6_ohgig")]
+position = Vector2(388, 186)
+level_path = "res://scenes/main/levels/level_7.tscn"

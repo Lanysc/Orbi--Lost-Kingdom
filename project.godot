@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="Orbi: Lost Kingdom"
-run/main_scene="res://scenes/ui/main_menu/main_menu.tscn"
+config/tags=PackedStringArray("faculdade")
+run/main_scene="res://scenes/splash/splash_container.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+sp="*res://addons/awesome_splash/utils_splash.gd"
+gd="*res://addons/godot-action/utils_gd_action.tscn"
 
 [display]
 
@@ -27,6 +33,10 @@ window/stretch/scale=1.3
 [dotnet]
 
 project/assembly_name="Orbi- Lost Kingdom"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/awesome_splash/plugin.cfg", "res://addons/godot-action/plugin.cfg")
 
 [gui]
 
