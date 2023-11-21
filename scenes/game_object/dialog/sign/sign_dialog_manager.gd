@@ -41,13 +41,16 @@ extends Node2D
 @onready var area_2d = $Area2D
 
 var _new_dialog: DialogScreen
-
+var _already_played:= false
 
 func _ready():
 	area_2d.body_entered.connect(on_body_entered)
  
 
 func on_body_entered(_body: Node2D):
+	if _already_played:
+		return
+	_already_played = true
 	_new_dialog = dialog_screen.instantiate()
 	_new_dialog.name = "DialogScreen"  # Define um nome para o nó
 	_new_dialog.data = data
