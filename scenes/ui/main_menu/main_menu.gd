@@ -7,7 +7,7 @@ extends Control
 @onready var options_button = $VBoxContainer/OptionsButton
 @onready var quit_button = $VBoxContainer/QuitButton
 
-var _first_level_path = "res://scenes/main/level_tester.tscn"
+var _first_level_path = "res://scenes/main/levels/level_1.tscn"
 var _level_selector_path = "res://scenes/main/level_selector_tester.tscn"
 
 

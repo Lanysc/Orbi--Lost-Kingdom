@@ -10,7 +10,32 @@ extends Node2D
 		"faceset": "res://icon.svg",
 		"dialog": "Hmm, Parece que leva para o Nivel X",
 		"title": "Orbi"
-	}
+	},
+	1: {
+		"faceset": "res://icon.svg",
+		"dialog": "Hmm, Parece que leva para o Nivel X",
+		"title": "Orbi"
+	},
+	2: {
+		"faceset": "res://icon.svg",
+		"dialog": "Hmm, Parece que leva para o Nivel X",
+		"title": "Orbi"
+	},
+	3: {
+		"faceset": "res://icon.svg",
+		"dialog": "Hmm, Parece que leva para o Nivel X",
+		"title": "Orbi"
+	},
+	4: {
+		"faceset": "res://icon.svg",
+		"dialog": "Hmm, Parece que leva para o Nivel X",
+		"title": "Orbi"
+	},
+	5: {
+		"faceset": "res://icon.svg",
+		"dialog": "Hmm, Parece que leva para o Nivel X",
+		"title": "Orbi"
+	},
 }
 
 @onready var area_2d = $Area2D

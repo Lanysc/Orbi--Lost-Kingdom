@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="1_juvu5"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="2_nfb55"]
-[ext_resource type="PackedScene" uid="uid://sfo7csaedd0a" path="res://scenes/game_object/dialog/dialog_manager.tscn" id="3_bdeou"]
+[ext_resource type="PackedScene" uid="uid://sfo7csaedd0a" path="res://scenes/game_object/dialog/sign/sign_dialog_manager.tscn" id="3_bdeou"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="4_akbjg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bkx2i4v8x2c8q"]
+[gd_scene load_steps=12 format=3 uid="uid://bkx2i4v8x2c8q"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_6tywb"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_sx2xy"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ceh8i3qauoesw" path="res://scenes/game_object/pressure_plate/pressure_plate.tscn" id="5_oad4s"]
 [ext_resource type="PackedScene" uid="uid://c75n7mhwpje8p" path="res://scenes/game_object/gate/gate.tscn" id="6_7gsoj"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="8_6gppu"]
+[ext_resource type="PackedScene" uid="uid://cfik4kpx8cmwx" path="res://scenes/game_object/dialog/story/story_dialog_manager.tscn" id="9_6kria"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_sx2xy")
@@ -615,3 +616,26 @@ zoom = Vector2(0.9, 0.9)
 [node name="LevelManager" parent="." instance=ExtResource("8_6gppu")]
 position = Vector2(433, 164)
 level_path = "res://scenes/main/levels/level_11.tscn"
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="StoryDialogManager" parent="." node_paths=PackedStringArray("hud") instance=ExtResource("9_6kria")]
+position = Vector2(219, 235)
+hud = NodePath("../HUD")
+data = {
+0: {
+"dialog": "Ao cruzar o portal, tudo se encaixou.",
+"faceset": "res://icon.svg",
+"title": "Orbi"
+},
+1: {
+"dialog": "Eu não estava apenas explorando; eu estava curando.",
+"faceset": "res://icon.svg",
+"title": "Orbi"
+},
+2: {
+"dialog": "Cada enigma que eu resolvia, trazia equilíbrio e luz a este reino.",
+"faceset": "res://icon.svg",
+"title": "Orbi"
+}
+}
