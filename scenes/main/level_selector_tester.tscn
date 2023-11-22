@@ -585,6 +585,11 @@ zoom = Vector2(0.9, 0.9)
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
+[node name="Level1Manager" parent="." instance=ExtResource("4_akbjg")]
+position = Vector2(173, 233)
+scale = Vector2(0.718839, 0.878623)
+level_path = "res://scenes/main/level_tester.tscn"
+
 [node name="Signs" type="Node2D" parent="."]
 
 [node name="Level1" type="Node2D" parent="Signs"]
@@ -599,11 +604,6 @@ data = {
 "title": "Orbi"
 }
 }
-
-[node name="LevelManager" parent="Signs/Level1" instance=ExtResource("4_akbjg")]
-position = Vector2(173, 233)
-scale = Vector2(0.718839, 0.878623)
-level_path = "res://scenes/main/level_tester.tscn"
 
 [node name="DialogManager2" parent="Signs" node_paths=PackedStringArray("hud") instance=ExtResource("3_bdeou")]
 position = Vector2(245, 248)

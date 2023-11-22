@@ -27,3 +27,5 @@ res://scenes/ui/dialog_screen/dialog_screen.gd
 res://scenes/component/game_manager/game_manager_component.tscn
 res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 res://scenes/game_object/dialog/sign/sign_dialog_manager.gd
+res://scenes/ui/main_menu/main_menu.gd
+res://scenes/main/level_selector_tester.tscn
