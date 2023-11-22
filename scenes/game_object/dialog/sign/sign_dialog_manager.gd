@@ -2,7 +2,7 @@ extends Node2D
 
 @export_category("Objects")
 @export var hud: CanvasLayer
-@export var dialog_screen: PackedScene = preload("res://scenes/component/dialog_screen/dialog_screen.tscn")
+@export var dialog_screen: PackedScene = preload("res://scenes/ui/dialog_screen/dialog_screen.tscn")
 
 @export_category("Data")
 @export var data: Dictionary = {

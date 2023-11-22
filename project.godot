@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 sp="*res://addons/awesome_splash/utils_splash.gd"
 gd="*res://addons/godot-action/utils_gd_action.tscn"
+MusicPlayer="*res://autoload/music_player.tscn"
 
 [display]
 

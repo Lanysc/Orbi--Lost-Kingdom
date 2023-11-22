@@ -1,0 +1,18 @@
+[gd_scene load_steps=9 format=3 uid="uid://baxucpvsvgttl"]
+
+[ext_resource type="Theme" uid="uid://bij0ybc76tvdt" path="res://scenes/ui/main_menu/button_theme.tres" id="1_oihdy"]
+[ext_resource type="Script" path="res://scenes/ui/sound_button/sound_button.gd" id="2_845vs"]
+[ext_resource type="PackedScene" uid="uid://cn0axbsqxo8a1" path="res://scenes/component/audio/random_audio_stream_player_component.tscn" id="3_f2lmp"]
+[ext_resource type="AudioStream" uid="uid://sfynefl0xrjo" path="res://resources/assets/audio/click1.ogg" id="4_rmhwc"]
+[ext_resource type="AudioStream" uid="uid://1kubhjh75p6s" path="res://resources/assets/audio/click2.ogg" id="5_suyto"]
+[ext_resource type="AudioStream" uid="uid://b7ufp7o38fvyw" path="res://resources/assets/audio/click3.ogg" id="6_5gcfd"]
+[ext_resource type="AudioStream" uid="uid://b3jbm2nq3r7ug" path="res://resources/assets/audio/click4.ogg" id="7_xfmlx"]
+[ext_resource type="AudioStream" uid="uid://cgmsbrwo4tfm7" path="res://resources/assets/audio/click5.ogg" id="8_yfcqb"]
+
+[node name="StartButton" type="Button"]
+theme = ExtResource("1_oihdy")
+text = "Iniciar"
+script = ExtResource("2_845vs")
+
+[node name="RandomAudioStreamPlayerComponent" parent="." instance=ExtResource("3_f2lmp")]
+streams = Array[AudioStream]([ExtResource("4_rmhwc"), ExtResource("5_suyto"), ExtResource("6_5gcfd"), ExtResource("7_xfmlx"), ExtResource("8_yfcqb")])

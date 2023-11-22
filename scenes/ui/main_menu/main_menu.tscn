@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://cg0e50dn2nlb0"]
 
 [ext_resource type="Script" path="res://scenes/ui/main_menu/main_menu.gd" id="1_5h5o7"]
-[ext_resource type="Theme" uid="uid://bij0ybc76tvdt" path="res://scenes/ui/main_menu/button_theme.tres" id="2_1vtgt"]
 [ext_resource type="PackedScene" uid="uid://y28u6ekwic8" path="res://scenes/ui/option_menu/options_menu.tscn" id="2_tti1b"]
-[ext_resource type="Texture2D" uid="uid://dkpw1l8hxmo0g" path="res://resources/assets/other/Free/Background/WhatsApp Image 2023-11-20 at 17.03.44.jpeg" id="3_ijgep"]
+[ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="3_10ad3"]
 [ext_resource type="PackedScene" uid="uid://bges1a3rf7iev" path="res://scenes/component/tile_map/ground_tile_ma.tscn" id="4_mhqq8"]
 [ext_resource type="Texture2D" uid="uid://dcam8e1dyrk33" path="res://resources/assets/vfx/leaf.png" id="4_qm1te"]
+[ext_resource type="PackedScene" uid="uid://baxucpvsvgttl" path="res://scenes/ui/sound_button/start_button_2.tscn" id="5_5fim4"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gimqj"]
 particles_animation = true
@@ -53,10 +53,10 @@ grow_vertical = 2
 script = ExtResource("1_5h5o7")
 options_scene = ExtResource("2_tti1b")
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(278, 166)
-scale = Vector2(0.871243, 0.665852)
-texture = ExtResource("3_ijgep")
+[node name="BackgroundTileMap" parent="." instance=ExtResource("3_10ad3")]
+position = Vector2(-56, 1.90735e-06)
+scale = Vector2(5, 5)
+layer_0/tile_data = PackedInt32Array(0, 131078, 0, 1, 131078, 0, 2, 131078, 0, 65536, 131078, 1, 65537, 131078, 1, 65538, 131078, 1)
 
 [node name="TileMap" parent="." instance=ExtResource("4_mhqq8")]
 
@@ -71,24 +71,19 @@ offset_right = 76.0
 offset_bottom = -10.0
 grow_vertical = 0
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
+[node name="StartButton" parent="VBoxContainer" instance=ExtResource("5_5fim4")]
 layout_mode = 2
-theme = ExtResource("2_1vtgt")
-text = "Iniciar"
 
-[node name="LevelSelectorButton" type="Button" parent="VBoxContainer"]
+[node name="LevelSelectorButton" parent="VBoxContainer" instance=ExtResource("5_5fim4")]
 layout_mode = 2
-theme = ExtResource("2_1vtgt")
 text = "Niveis"
 
-[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+[node name="OptionsButton" parent="VBoxContainer" instance=ExtResource("5_5fim4")]
 layout_mode = 2
-theme = ExtResource("2_1vtgt")
 text = "Opcoes"
 
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
+[node name="QuitButton" parent="VBoxContainer" instance=ExtResource("5_5fim4")]
 layout_mode = 2
-theme = ExtResource("2_1vtgt")
 text = "Sair"
 
 [node name="Leaf" type="Node2D" parent="."]

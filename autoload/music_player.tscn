@@ -1,11 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://b26b4h4x8ilgk"]
+[gd_scene load_steps=5 format=3 uid="uid://b26b4h4x8ilgk"]
 
-[ext_resource type="AudioStream" uid="uid://lonckea7so47" path="res://assets/audio/the-epic-adventure-131399.mp3" id="1_uc03l"]
-[ext_resource type="Script" path="res://scenes/autoload/music_player.gd" id="2_trmax"]
+[ext_resource type="AudioStream" uid="uid://b0i0e8ii5w3bq" path="res://resources/music/out-of-time-15474.mp3" id="1_67gxq"]
+[ext_resource type="AudioStream" uid="uid://b021ekrh8jgvm" path="res://resources/music/touch-and-sound-113676.mp3" id="2_bnl3x"]
+[ext_resource type="Script" path="res://autoload/music_player.gd" id="2_trmax"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kmb7s"]
+streams_count = 2
+playback_mode = 1
+stream_0/stream = ExtResource("1_67gxq")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_bnl3x")
+stream_1/weight = 1.0
 
 [node name="MusicPlayer" type="AudioStreamPlayer"]
 process_mode = 3
-stream = ExtResource("1_uc03l")
+stream = SubResource("AudioStreamRandomizer_kmb7s")
 volume_db = -12.0
 autoplay = true
 bus = &"music"

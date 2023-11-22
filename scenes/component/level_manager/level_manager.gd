@@ -2,6 +2,7 @@ extends Node2D
 
 @export var level_path := "res://scenes/main/level_4.tscn"
 @export var automatic := true
+@export var keys: Array[Area2D]
 
 @onready var area_2d = $Area2D
 @onready var timer = Timer.new()  # Criar um novo Timer
@@ -41,6 +42,10 @@ func _on_Area2D_body_exited(body):
 
 
 func start_level_change():
+	for key in keys: #se as chaves nao forem pegas
+		if key != null:
+			return
+	
 	in_progress = true
 	get_parent().get_node("Player").queue_free()
 	timer.start()

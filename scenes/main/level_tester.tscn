@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dwcnt7g0whfsn"]
+[gd_scene load_steps=13 format=3 uid="uid://dwcnt7g0whfsn"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_8o6be"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="1_487y0"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="3_sf736"]
 [ext_resource type="PackedScene" uid="uid://ceh8i3qauoesw" path="res://scenes/game_object/pressure_plate/pressure_plate.tscn" id="4_eoe7p"]
 [ext_resource type="PackedScene" uid="uid://c75n7mhwpje8p" path="res://scenes/game_object/gate/gate.tscn" id="5_pj8t4"]
+[ext_resource type="PackedScene" uid="uid://ddy6qvjmthix7" path="res://scenes/game_object/key/key.tscn" id="7_lpj3d"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="8_bsy35"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("1_487y0")
@@ -1160,10 +1162,10 @@ position = Vector2(505, 233)
 position = Vector2(169, 233)
 
 [node name="Box5" parent="." instance=ExtResource("3_sf736")]
-position = Vector2(441, 226)
+position = Vector2(457, 233)
 
 [node name="Box4" parent="." instance=ExtResource("3_sf736")]
-position = Vector2(340, 227)
+position = Vector2(361, 221)
 
 [node name="Box3" parent="." instance=ExtResource("3_sf736")]
 position = Vector2(264, 228)
@@ -1178,3 +1180,11 @@ position = Vector2(471, 136)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(355, 205)
 zoom = Vector2(0.9, 0.9)
+
+[node name="Key" parent="." instance=ExtResource("7_lpj3d")]
+position = Vector2(427, 232)
+
+[node name="LevelManager" parent="." node_paths=PackedStringArray("keys") instance=ExtResource("8_bsy35")]
+position = Vector2(432, 169)
+level_path = "res://scenes/main/level_tester.tscn"
+keys = [NodePath("../Key")]
