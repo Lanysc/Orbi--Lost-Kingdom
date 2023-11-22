@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bvifw7qaqe5yg"]
+[gd_scene load_steps=11 format=3 uid="uid://bvifw7qaqe5yg"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_6tywb"]
+[ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_dr4j6"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_sx2xy"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="3_volce"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="3_wvfdu"]
@@ -585,6 +586,11 @@ physics_layer_0/collision_mask = 8
 
 [node name="LevelTester" type="Node2D"]
 position = Vector2(-5, 57)
+
+[node name="BackgroundTileMap" parent="." instance=ExtResource("1_dr4j6")]
+position = Vector2(-57, 9.99999)
+scale = Vector2(5, 5)
+layer_0/tile_data = PackedInt32Array(0, 131078, 0, 1, 131078, 0, 2, 131078, 0, 65536, 131078, 1, 65537, 131078, 1, 65538, 131078, 1)
 
 [node name="GameManagerComponent" parent="." instance=ExtResource("1_6tywb")]
 

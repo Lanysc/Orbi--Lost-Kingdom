@@ -1,6 +1,7 @@
+TileMap
+Sprite2D
 CenterContainer
 Label
-Sprite2D
 ParallaxLayer
 ParallaxBackground
 Node2D
@@ -23,4 +24,3 @@ CharacterBody2D
 AnimationPlayer
 AnimationTree
 VelocityComponent
-TileMap

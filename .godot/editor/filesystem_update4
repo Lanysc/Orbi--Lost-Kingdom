@@ -1,7 +1,11 @@
-res://scenes/splash/splash_container.tscn
+res://scenes/main/levels/level_1.tscn
 res://resources/theme/theme.tres
-res://scenes/main/levels/level_8.tscn
-res://scenes/game_object/player/player.tscn
+res://scenes/splash/splash_container.tscn
 res://scenes/main/levels/level_6.tscn
 res://scenes/main/levels/level_7.tscn
+res://scenes/main/levels/level_8.tscn
 res://scenes/main/levels/level_9.tscn
+res://scenes/game_object/player/player.tscn
+res://scenes/main/levels/level_5.tscn
+res://scenes/main/levels/level_10.tscn
+res://scenes/main/levels/level_11.tscn

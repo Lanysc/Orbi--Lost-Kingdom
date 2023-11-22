@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b8eyh4txoe4n3"]
+[gd_scene load_steps=12 format=3 uid="uid://b8eyh4txoe4n3"]
 
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_503fu"]
+[ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_ghhxf"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="2_a1qht"]
 [ext_resource type="Texture2D" uid="uid://cm6hgvjj0h3rb" path="res://resources/assets/other/Tilemap/tilemap_packed.png" id="2_vgv2f"]
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="4_b6e3q"]
@@ -582,6 +583,11 @@ sources/0 = SubResource("TileSetAtlasSource_6qh2k")
 
 [node name="Level" type="Node2D"]
 position = Vector2(-5, 57)
+
+[node name="BackgroundTileMap" parent="." instance=ExtResource("1_ghhxf")]
+position = Vector2(-57, 9.99999)
+scale = Vector2(5, 5)
+layer_0/tile_data = PackedInt32Array(0, 6, 0, 1, 65542, 0, 2, 65542, 0, 65536, 6, 1, 65537, 65542, 1, 65538, 65542, 1)
 
 [node name="GameManagerComponent" parent="." instance=ExtResource("1_503fu")]
 
