@@ -48,7 +48,7 @@ func handle_state(movement_x_vector: float):
 		State.FALL:
 			handle_fall()
 	update_visuals(movement_x_vector)
-#	update_animation()
+	update_animation()
 
 
 func on_interact_area_entered(body):

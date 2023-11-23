@@ -1,5 +1,5 @@
-res://scenes/ui/sound_button
 res://autoload
+res://scenes/ui/sound_button
 res://scenes/game_object/key
 res://scenes/component/tile_map
 res://scenes/splash
