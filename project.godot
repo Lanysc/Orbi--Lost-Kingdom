@@ -18,9 +18,10 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+MusicPlayer="*res://autoload/music_player.tscn"
 sp="*res://addons/awesome_splash/utils_splash.gd"
 gd="*res://addons/godot-action/utils_gd_action.tscn"
-MusicPlayer="*res://autoload/music_player.tscn"
+EventManager="*res://autoload/event_manager.tscn"
 
 [display]
 

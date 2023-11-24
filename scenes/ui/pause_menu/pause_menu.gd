@@ -66,7 +66,7 @@ func on_options_pressed():
 
 func on_restart_pressed():
 	get_tree().paused = false
-	get_tree().reload_current_scene()
+	EventManager.level_restart()
 
 
 func on_quit_pressed():

@@ -1,20 +1,33 @@
 extends Node2D
 
+enum AnimationStates {
+	IDLE,
+	CLOSE,
+	OPEN
+}
+
 @export var level_path := "res://scenes/main/level_4.tscn"
 @export var automatic := true
 @export var keys: Array[Area2D]
 
 @onready var area_2d = $Area2D
 @onready var timer = Timer.new()  # Criar um novo Timer
+@onready var animation_player = $AnimationPlayer
 
 var player_inside := false
 var camera_2d : Camera2D
-var shaking_duration := 0.5  # Duração do shake em segundos
+var shaking_duration := 0.7  # Duração do shake em segundos
 var shaking_intensity := 5  # Intensidade do shake
 var original_offset
 var in_progress:= false
+var current_state = AnimationStates.CLOSE
+
 
 func _ready():
+	if keys.is_empty():
+		animation_player.play("idle")
+		current_state = AnimationStates.IDLE
+	
 	camera_2d = get_parent().get_node("Camera2D")
 	original_offset = camera_2d.offset
 	area_2d.body_entered.connect(_on_Area2D_body_entered)
@@ -29,6 +42,7 @@ func _process(_delta):
 	if player_inside and (Input.is_key_pressed(KEY_W) or automatic):
 		if !in_progress:
 			start_level_change()
+	open_portal()
 
 
 func _on_Area2D_body_entered(body):
@@ -42,14 +56,29 @@ func _on_Area2D_body_exited(body):
 
 
 func start_level_change():
+	if current_state != AnimationStates.IDLE:
+		return
+	EventManager.change_level()
+	in_progress = true
+	get_parent().get_node("Player").queue_free()
+	animation_player.play("close")
+	current_state = AnimationStates.CLOSE
+	timer.start()
+	shake_screen()  # Iniciar o efeito de tela tremendo
+
+
+func open_portal():
 	for key in keys: #se as chaves nao forem pegas
 		if key != null:
 			return
-	
-	in_progress = true
-	get_parent().get_node("Player").queue_free()
-	timer.start()
-	shake_screen()  # Iniciar o efeito de tela tremendo
+	if current_state == AnimationStates.CLOSE:
+		animation_player.play("open")
+		current_state = AnimationStates.OPEN
+
+
+func play_idle():
+	animation_player.play("idle")
+	current_state = AnimationStates.IDLE
 
 
 func _on_Timer_timeout():

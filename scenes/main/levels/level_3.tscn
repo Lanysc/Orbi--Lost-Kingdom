@@ -621,17 +621,17 @@ hud = NodePath("../HUD")
 data = {
 0: {
 "dialog": "Ao cruzar o portal, a saudade me inundou.",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
 "dialog": "Flashbacks de uma mesa de jantar, risos, o calor de uma luz suave...",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
 "dialog": "\"Era minha casa?\"",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }
 }

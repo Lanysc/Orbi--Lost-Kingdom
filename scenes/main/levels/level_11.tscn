@@ -78,17 +78,17 @@ hud = NodePath("../HUD")
 data = {
 0: {
 "dialog": "A memória dos Guardiões de Qubópolis emergiu quando passei pelo portal.",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
 "dialog": "\"Eu sou o guardião escolhido\"",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
 "dialog": "Cada enigma que eu resolvia, trazia equilíbrio e luz a este reino.",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }
 }

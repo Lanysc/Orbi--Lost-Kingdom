@@ -66,7 +66,7 @@ func on_danger_area_entered(_body):
 
 
 func restart_level():
-	get_tree().reload_current_scene()
+	EventManager.level_restart()
 
 
 func handle_interact():

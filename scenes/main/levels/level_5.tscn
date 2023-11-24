@@ -639,17 +639,17 @@ hud = NodePath("../HUD")
 data = {
 0: {
 "dialog": "vi-me em um laboratório, cercado por engenhocas e mapas de mundos distantes.",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
 "dialog": "\"Isso foi algo que eu criei?\" ",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
 "dialog": " A ideia de uma missão começou a tomar forma em minha mente.",
-"faceset": "res://icon.svg",
+"faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }
 }
