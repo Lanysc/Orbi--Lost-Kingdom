@@ -1,16 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://b26b4h4x8ilgk"]
 
-[ext_resource type="AudioStream" uid="uid://b0i0e8ii5w3bq" path="res://resources/music/out-of-time-15474.mp3" id="1_67gxq"]
-[ext_resource type="AudioStream" uid="uid://b021ekrh8jgvm" path="res://resources/music/touch-and-sound-113676.mp3" id="2_bnl3x"]
+[ext_resource type="AudioStream" uid="uid://d7v47yiwmgiq" path="res://resources/music/morning-funny-beat-7741.mp3" id="1_vty7h"]
+[ext_resource type="AudioStream" uid="uid://b465t3k6sigkd" path="res://resources/music/your-game-comedy-173310.mp3" id="1_xbj88"]
 [ext_resource type="Script" path="res://autoload/music_player.gd" id="2_trmax"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kmb7s"]
-streams_count = 2
+streams_count = 3
 playback_mode = 1
-stream_0/stream = ExtResource("1_67gxq")
+stream_0/stream = ExtResource("1_xbj88")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource("2_bnl3x")
+stream_1/stream = ExtResource("1_vty7h")
 stream_1/weight = 1.0
+stream_2/stream = ExtResource("1_xbj88")
+stream_2/weight = 1.0
 
 [node name="MusicPlayer" type="AudioStreamPlayer"]
 process_mode = 3

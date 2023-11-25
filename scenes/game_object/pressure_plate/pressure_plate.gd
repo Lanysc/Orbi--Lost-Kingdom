@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var gate: Gate
-
+@export var is_resettable := true
 @onready var area_2d = $Area2D
 @onready var animation_player = $AnimationPlayer
 
@@ -14,7 +14,6 @@ func _ready():
 
 
 func on_body_entered(_body: Node2D):
-	
 	if bodies_number == 0:
 		if gate:
 			gate.open()
@@ -23,6 +22,9 @@ func on_body_entered(_body: Node2D):
 
 
 func on_body_exited(_body: Node2D):
+	if !is_resettable:
+		return
+	
 	bodies_number -= 1
 	if bodies_number <= 0:
 		animation_player.play("unpress")

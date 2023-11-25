@@ -126,7 +126,7 @@ func update_animation():
 func verify_vertical_input():
 	if is_on_floor():
 		jump_count = 0
-	if Input.is_action_just_pressed("jump") and jump_count < max_jumps:
+	if Input.is_action_just_pressed("jump") and jump_count < max_jumps and is_on_floor():
 		current_state = State.JUMP
 		jump_count += 1
 		velocity_component.jump()

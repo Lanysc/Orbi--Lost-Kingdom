@@ -615,6 +615,9 @@ position = Vector2(169, 233)
 [node name="Box4" parent="." instance=ExtResource("4_muduf")]
 position = Vector2(160, 171)
 
+[node name="Box5" parent="." instance=ExtResource("4_muduf")]
+position = Vector2(155, 149)
+
 [node name="Box3" parent="." instance=ExtResource("4_muduf")]
 position = Vector2(264, 228)
 
