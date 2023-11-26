@@ -19,11 +19,11 @@ func _ready():
 	quit_button.pressed.connect(on_quit_button_pressed)
 
 func on_start_button_pressed():
-	get_tree().change_scene_to_file(_first_level_path)
+	Transit.change_scene_to_file(_first_level_path)
 
 
 func on_level_selector_button_pressed():
-	get_tree().change_scene_to_file(_level_selector_path)
+	Transit.change_scene_to_file(_level_selector_path)
 
 
 func on_options_button_pressed():

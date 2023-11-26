@@ -3,6 +3,7 @@ extends Node2D
 @export_category("Objects")
 @export var hud: CanvasLayer
 @export var is_disable := false 
+@export var can_repeat := false
 @export var dialog_screen: PackedScene = preload("res://scenes/ui/dialog_screen/dialog_screen.tscn")
 
 @export_category("Data")
@@ -49,14 +50,25 @@ func _ready():
 		is_disable = true
 	
 	area_2d.body_entered.connect(on_body_entered)
+	area_2d.body_exited.connect(on_body_exited)
  
 
 func on_body_entered(_body: Node2D):
 	if _already_played or is_disable:
 		return
-	_already_played = true
+	
+	if !can_repeat:
+		_already_played = true
 	_new_dialog = dialog_screen.instantiate()
 	_new_dialog.name = "DialogScreen"  # Define um nome para o nó
 	_new_dialog.data = data
 	hud.add_child(_new_dialog)
+
+
+func on_body_exited(_body: Node2D):
+	if !can_repeat:
+		return
+	
+	if _new_dialog != null:
+		_new_dialog.queue_free()
 

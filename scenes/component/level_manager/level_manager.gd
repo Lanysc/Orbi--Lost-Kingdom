@@ -86,7 +86,7 @@ func _on_Timer_timeout():
 
 
 func change_level():
-	get_tree().change_scene_to_file(level_path)
+	Transit.change_scene_to_file(level_path)
 
 
 func shake_screen():

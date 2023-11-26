@@ -22,6 +22,7 @@ MusicPlayer="*res://autoload/music_player.tscn"
 sp="*res://addons/awesome_splash/utils_splash.gd"
 gd="*res://addons/godot-action/utils_gd_action.tscn"
 EventManager="*res://autoload/event_manager.tscn"
+Transit="*res://addons/transit/Transit.tscn"
 
 [display]
 
@@ -38,7 +39,7 @@ project/assembly_name="Orbi- Lost Kingdom"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/awesome_splash/plugin.cfg", "res://addons/godot-action/plugin.cfg")
+enabled=PackedStringArray("res://addons/awesome_splash/plugin.cfg", "res://addons/godot-action/plugin.cfg", "res://addons/transit/plugin.cfg")
 
 [gui]
 
