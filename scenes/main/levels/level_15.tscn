@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwiu1depr6qxf"]
+[gd_scene load_steps=12 format=3 uid="uid://cwiu1depr6qxf"]
 
 [ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_3gfb0"]
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="2_vrplc"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="8_scap2"]
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="9_sx138"]
 [ext_resource type="PackedScene" uid="uid://ceh8i3qauoesw" path="res://scenes/game_object/pressure_plate/pressure_plate.tscn" id="10_upuvt"]
+[ext_resource type="PackedScene" uid="uid://ddy6qvjmthix7" path="res://scenes/game_object/key/key.tscn" id="11_eqr2d"]
 
 [node name="LevelTester" type="Node2D"]
 position = Vector2(56, 106)
@@ -55,9 +56,10 @@ data = {
 }
 }
 
-[node name="LevelManager" parent="." instance=ExtResource("7_xudci")]
+[node name="LevelManager" parent="." node_paths=PackedStringArray("keys") instance=ExtResource("7_xudci")]
 position = Vector2(508, 71)
 level_path = "res://scenes/main/level_selector_tester.tscn"
+keys = [NodePath("../Key")]
 
 [node name="Player" parent="." instance=ExtResource("8_scap2")]
 position = Vector2(81, 135)
@@ -66,13 +68,13 @@ position = Vector2(81, 135)
 position = Vector2(249, -5)
 
 [node name="Box" parent="." instance=ExtResource("9_sx138")]
-position = Vector2(312, 154)
+position = Vector2(414, 82)
 
 [node name="Box7" parent="." instance=ExtResource("9_sx138")]
 position = Vector2(374, 22)
 
 [node name="Box5" parent="." instance=ExtResource("9_sx138")]
-position = Vector2(374, -5)
+position = Vector2(521, 134)
 
 [node name="Box3" parent="." instance=ExtResource("9_sx138")]
 position = Vector2(263, 100)
@@ -96,3 +98,6 @@ position = Vector2(468, 37)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(294, 90)
 zoom = Vector2(0.9, 0.9)
+
+[node name="Key" parent="." instance=ExtResource("11_eqr2d")]
+position = Vector2(232, 160)

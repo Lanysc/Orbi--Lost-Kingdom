@@ -71,7 +71,7 @@ func open_portal():
 	for key in keys: #se as chaves nao forem pegas
 		if key != null:
 			return
-	if current_state == AnimationStates.CLOSE:
+	if current_state == AnimationStates.CLOSE and !in_progress:
 		animation_player.play("open")
 		current_state = AnimationStates.OPEN
 
