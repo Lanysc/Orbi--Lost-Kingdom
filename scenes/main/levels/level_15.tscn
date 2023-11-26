@@ -58,7 +58,7 @@ data = {
 
 [node name="LevelManager" parent="." node_paths=PackedStringArray("keys") instance=ExtResource("7_xudci")]
 position = Vector2(508, 71)
-level_path = "res://scenes/main/level_selector_tester.tscn"
+level_path = "res://scenes/main/level_final.tscn"
 keys = [NodePath("../Key")]
 
 [node name="Player" parent="." instance=ExtResource("8_scap2")]

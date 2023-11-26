@@ -1,0 +1,96 @@
+[gd_scene load_steps=12 format=3 uid="uid://c2knvln5encac"]
+
+[ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_6q31d"]
+[ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="2_dyefe"]
+[ext_resource type="PackedScene" uid="uid://c75n7mhwpje8p" path="res://scenes/game_object/gate/gate.tscn" id="3_fku8f"]
+[ext_resource type="PackedScene" uid="uid://d1pt865t1fjqw" path="res://scenes/component/tile_map/ground_tile_map.tscn" id="4_0y02r"]
+[ext_resource type="PackedScene" uid="uid://dih8fo0d6qkr8" path="res://scenes/component/tile_map/danger_tile_map.tscn" id="5_j0kym"]
+[ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="6_wae2f"]
+[ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="7_i52mo"]
+[ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="8_ei8e3"]
+[ext_resource type="PackedScene" uid="uid://ceh8i3qauoesw" path="res://scenes/game_object/pressure_plate/pressure_plate.tscn" id="9_fqcvo"]
+[ext_resource type="PackedScene" uid="uid://ddy6qvjmthix7" path="res://scenes/game_object/key/key.tscn" id="10_ryqsp"]
+[ext_resource type="PackedScene" uid="uid://cfik4kpx8cmwx" path="res://scenes/game_object/dialog/story/story_dialog_manager.tscn" id="11_qylg8"]
+
+[node name="LevelTester" type="Node2D"]
+position = Vector2(56, 106)
+
+[node name="BackgroundTileMap" parent="." instance=ExtResource("1_6q31d")]
+position = Vector2(-57, -100)
+scale = Vector2(5, 5)
+layer_0/tile_data = PackedInt32Array(0, 196614, 0, 1, 196614, 0, 2, 196614, 0, 65536, 196614, 1, 65537, 196614, 1, 65538, 196614, 1)
+
+[node name="GameManagerComponent" parent="." instance=ExtResource("2_dyefe")]
+
+[node name="TileMap" parent="." instance=ExtResource("4_0y02r")]
+position = Vector2(134, -51)
+scale = Vector2(1, 1)
+layer_0/tile_data = PackedInt32Array(655356, 589824, 1, 655357, 589824, 1, 655358, 589824, 1, 655359, 589824, 1, 589824, 589824, 1, 589825, 589824, 1, 589826, 589824, 1, 589827, 589824, 1, 196603, 589824, 1, 262139, 589824, 1, 327675, 589824, 1, 393211, 589824, 1, 458747, 589824, 1, 524283, 589824, 1, 589819, 589824, 1, 655355, 589824, 1, 131067, 589824, 1, 131068, 589824, 1, 131069, 589824, 1, 131070, 589824, 1, 131071, 589824, 1, 65536, 589824, 1, 65537, 589824, 1, 65538, 589824, 1, 65539, 589824, 1, 65540, 589824, 1, 65541, 589824, 1, 65542, 589824, 1, 65543, 589824, 1, 589841, 589824, 1, 65544, 589824, 1, 65545, 589824, 1, 65546, 589824, 1, 65547, 589824, 1, 65548, 589824, 1, 65549, 589824, 1, 65550, 589824, 1, 65551, 589824, 1, 65552, 589824, 1, 589842, 589824, 1, 589843, 589824, 1, 589844, 589824, 1, 589845, 589824, 1, 589846, 589824, 1, 655382, 589824, 1, 720918, 589824, 1, 786454, 589824, 1, 851990, 589824, 1, 917510, 589824, 1, 917511, 589824, 1, 917512, 589824, 1, 917513, 589824, 1, 917514, 589824, 1, 917515, 589824, 1, 917516, 589824, 1, 917517, 589824, 1, 917518, 589824, 1, 917519, 589824, 1, 917520, 589824, 1, 917521, 589824, 1, 917522, 589824, 1, 917523, 589824, 1, 917524, 589824, 1, 917525, 589824, 1, 917526, 589824, 1, 655363, 589824, 1, 720899, 589824, 1, 786435, 589824, 1, 851971, 589824, 1, 917509, 589824, 1, 917508, 589824, 1, 917507, 589824, 1, 851989, 196608, 0, 851988, 131072, 0, 851987, 131072, 0, 851986, 131072, 0, 851985, 131072, 0, 851984, 65536, 0, 458757, 393216, 7, 393224, 524288, 2, 393225, 589824, 2, 327692, 458752, 2, 131088, 589824, 1, 196624, 589824, 1, 262160, 589824, 1, 327696, 589824, 1, 393232, 589824, 1, 458768, 589824, 1, 524304, 589824, 1, 589840, 589824, 1, 589820, 65536, 0, 524290, 196608, 0, 589821, 131072, 0, 589822, 131072, 0, 589823, 131072, 0, 524288, 131072, 0, 524289, 131072, 0, 524291, 589824, 1, 458754, 327680, 6, 524287, 1114112, 6, 458751, 1114112, 5, 393216, 1245184, 6, 458750, 1179648, 4, 393215, 1179648, 2, 393214, 1114112, 2, 327680, 1245184, 2, 196608, 1245184, 0, 262142, 1114112, 0, 262143, 1179648, 0, 327678, 1114112, 1, 262144, 1245184, 1, 327679, 1179648, 1, 786450, 393216, 6, 786453, 327680, 6, 786452, 262144, 6, 524285, 262144, 6, 524286, 524288, 6, 327689, 524288, 6, 393226, 655360, 2, 786439, 393216, 7, 851978, 589824, 1, 786442, 589824, 1, 720906, 589824, 1, 655370, 589824, 1, 589834, 589824, 1)
+
+[node name="DangerTileMap" parent="." instance=ExtResource("5_j0kym")]
+position = Vector2(134, -51)
+layer_0/tile_data = PackedInt32Array(851973, 524288, 3, 851974, 524288, 3, 851975, 524288, 3, 851972, 524288, 3, 851976, 524288, 3, 851977, 524288, 3, 851980, 524288, 3, 851981, 524288, 3, 851982, 524288, 3, 851983, 524288, 3, 851979, 524288, 3)
+
+[node name="LevelManager" parent="." node_paths=PackedStringArray("keys") instance=ExtResource("6_wae2f")]
+position = Vector2(483, 158)
+level_path = "res://scenes/main/levels/level_14.tscn"
+keys = [NodePath("../Key"), NodePath("../Key2")]
+
+[node name="Player" parent="." instance=ExtResource("7_i52mo")]
+position = Vector2(143, 78)
+
+[node name="Box" parent="." instance=ExtResource("8_ei8e3")]
+position = Vector2(410, 13)
+
+[node name="Box2" parent="." instance=ExtResource("8_ei8e3")]
+position = Vector2(413, 31)
+
+[node name="Box4" parent="." instance=ExtResource("8_ei8e3")]
+position = Vector2(75, 79)
+
+[node name="Box5" parent="." instance=ExtResource("8_ei8e3")]
+position = Vector2(408, -5)
+
+[node name="Box3" parent="." instance=ExtResource("8_ei8e3")]
+position = Vector2(73, 49)
+
+[node name="PressurePlate2" parent="." node_paths=PackedStringArray("gate") instance=ExtResource("9_fqcvo")]
+position = Vector2(120, 90)
+gate = NodePath("../Gate2")
+
+[node name="Gate2" parent="." instance=ExtResource("3_fku8f")]
+position = Vector2(424, 49)
+rotation = 1.5708
+
+[node name="Key" parent="." instance=ExtResource("10_ryqsp")]
+position = Vector2(269, 160)
+
+[node name="Key2" parent="." instance=ExtResource("10_ryqsp")]
+position = Vector2(215, 105)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(294, 90)
+zoom = Vector2(0.9, 0.9)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="StoryDialogManager" parent="." node_paths=PackedStringArray("hud") instance=ExtResource("11_qylg8")]
+position = Vector2(144, 81)
+hud = NodePath("../HUD")
+data = {
+0: {
+"dialog": "A memória dos Guardiões de Qubópolis emergiu quando passei pelo portal.",
+"faceset": "res://resources/assets/player/player_face.png",
+"title": "Orbi"
+},
+1: {
+"dialog": "\"Eu sou o guardião escolhido\"",
+"faceset": "res://resources/assets/player/player_face.png",
+"title": "Orbi"
+},
+2: {
+"dialog": "Cada enigma que eu resolvia, trazia equilíbrio e luz a este reino.",
+"faceset": "res://resources/assets/player/player_face.png",
+"title": "Orbi"
+}
+}

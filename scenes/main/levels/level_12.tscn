@@ -39,7 +39,7 @@ layer_0/tile_data = PackedInt32Array(851973, 524288, 3, 851974, 524288, 3, 85197
 
 [node name="LevelManager" parent="." node_paths=PackedStringArray("keys") instance=ExtResource("5_agsf7")]
 position = Vector2(483, 130)
-level_path = "res://scenes/main/level_selector_tester.tscn"
+level_path = "res://scenes/main/levels/level_13.tscn"
 keys = [NodePath("../Key")]
 
 [node name="Player" parent="." instance=ExtResource("6_bqp20")]
@@ -75,7 +75,7 @@ zoom = Vector2(0.9, 0.9)
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="StoryDialogManager" parent="." node_paths=PackedStringArray("hud") instance=ExtResource("10_l2tn7")]
-position = Vector2(190, 83)
+position = Vector2(144, 146)
 hud = NodePath("../HUD")
 data = {
 0: {

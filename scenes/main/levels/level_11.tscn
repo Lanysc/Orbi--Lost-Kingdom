@@ -32,7 +32,7 @@ layer_0/tile_data = PackedInt32Array(851973, 524288, 3, 851974, 524288, 3, 85197
 
 [node name="LevelManager" parent="." instance=ExtResource("8_w43tn")]
 position = Vector2(483, 158)
-level_path = "res://scenes/main/level_selector_tester.tscn"
+level_path = "res://scenes/main/levels/level_12.tscn"
 
 [node name="Player" parent="." instance=ExtResource("3_8c3tp")]
 position = Vector2(143, 78)

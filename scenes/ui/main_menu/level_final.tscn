@@ -1,0 +1,119 @@
+[gd_scene load_steps=9 format=3 uid="uid://b4mpnv4r3u2p3"]
+
+[ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="3_7qktu"]
+[ext_resource type="PackedScene" uid="uid://bges1a3rf7iev" path="res://scenes/component/tile_map/ground_tile_ma.tscn" id="4_chxe8"]
+[ext_resource type="Texture2D" uid="uid://dcam8e1dyrk33" path="res://resources/assets/vfx/leaf.png" id="6_otod6"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gimqj"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_d6a5x"]
+offsets = PackedFloat32Array(0.870968, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="3"]
+gradient = SubResource("Gradient_d6a5x")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_r8okx"]
+lifetime_randomness = 1.0
+emission_shape = 3
+emission_box_extents = Vector3(400, 5, 1)
+direction = Vector3(0.5, 1, 0)
+spread = 30.0
+flatness = 0.38
+gravity = Vector3(2.08165e-12, 2.08165e-12, 2.08165e-12)
+linear_accel_min = 8.0
+linear_accel_max = 12.0
+scale_min = 0.05
+scale_max = 0.08
+color_ramp = SubResource("3")
+turbulence_noise_scale = 2.0
+anim_speed_min = 4.0
+anim_speed_max = 20.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5ci77"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[node name="FinalLevel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundTileMap" parent="." instance=ExtResource("3_7qktu")]
+position = Vector2(-56, 1.90735e-06)
+scale = Vector2(5, 5)
+layer_0/tile_data = PackedInt32Array(0, 196614, 0, 1, 196614, 0, 2, 196614, 0, 65536, 196614, 1, 65537, 196614, 1, 65538, 196614, 1)
+
+[node name="TileMap" parent="." instance=ExtResource("4_chxe8")]
+visible = false
+
+[node name="Leaf" type="Node2D" parent="."]
+
+[node name="Particles2D2" type="GPUParticles2D" parent="Leaf"]
+z_index = 1
+material = SubResource("CanvasItemMaterial_gimqj")
+position = Vector2(20, -2)
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_r8okx")
+texture = ExtResource("6_otod6")
+lifetime = 15.0
+
+[node name="Particles2D" type="GPUParticles2D" parent="Leaf"]
+z_index = 1
+material = SubResource("CanvasItemMaterial_5ci77")
+position = Vector2(237, -24)
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_r8okx")
+texture = ExtResource("6_otod6")
+lifetime = 15.0
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.0
+offset_top = -116.0
+offset_right = 146.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 40
+text = "Orbi: Lost Kingdon
+
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_constants/line_spacing = 6
+text = "Obrigado por jogar!
+A jornada de Orbi em Orbi: Reino dos Portais'
+foi especial graças a você. Até a próxima aventura!
+
+Com gratidão,
+Equipe Raven Corp"
+horizontal_alignment = 1

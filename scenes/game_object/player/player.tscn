@@ -6,10 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cg4g0gwpnprwi" path="res://resources/assets/player/Run (64x32).png" id="4_jm0fh"]
 [ext_resource type="Texture2D" uid="uid://p8c5xsyf1726" path="res://resources/assets/player/Attack (64x32).png" id="5_ep588"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5rv5y"]
-radius = 7.0
-height = 16.0
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qc3n6"]
 size = Vector2(17, 3)
 
@@ -231,6 +227,9 @@ _data = {
 "run": SubResource("Animation_ymrqx")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axltu"]
+size = Vector2(11, 14)
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
 collision_mask = 9
@@ -241,10 +240,6 @@ max_speed = 80
 acceleration = 15.0
 jump_height = 30.0
 jump_time_to_descent = 0.3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
-shape = SubResource("CapsuleShape2D_5rv5y")
 
 [node name="Visuals" type="Node2D" parent="."]
 
@@ -275,3 +270,7 @@ autoplay = "idle"
 libraries = {
 "": SubResource("AnimationLibrary_mmyds")
 }
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_axltu")
