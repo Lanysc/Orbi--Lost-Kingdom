@@ -10,11 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Orbi: Lost Kingdom"
+config/name="Orbi: Reino dos Portais"
 config/tags=PackedStringArray("faculdade")
 run/main_scene="res://scenes/splash/splash_container.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://resources/assets/player/player_face.png"
+config/macos_native_icon="res://resources/assets/player/icon.ico"
+config/windows_native_icon="res://resources/assets/player/icon.ico"
 
 [autoload]
 

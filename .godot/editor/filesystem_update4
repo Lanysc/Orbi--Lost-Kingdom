@@ -38,3 +38,5 @@ res://scenes/main/level_selector/level_selector_3.tscn
 res://scenes/main/level_tester.tscn
 res://scenes/ui/sound_button/start_button_2.tscn
 res://scenes/game_object/dialog/sign/sign_dialog_manager.gd
+res://scenes/game_object/box/box.tscn
+res://scenes/game_object/box/box.gd

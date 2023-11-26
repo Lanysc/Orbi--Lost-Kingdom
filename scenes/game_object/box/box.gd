@@ -5,13 +5,14 @@ extends CharacterBody2D
 @onready var velocity_component = $VelocityComponent
 @onready var collision_shape_2d = $CollisionShape2D
 @onready var area_2d = $Area2D
-@onready var ray_cast_2d = $RayCast2D
+@onready var area_2d_2 = $Area2D2
 
 var movement_x:= 0.0
 var is_rigid := true
 
 func _ready():
 	area_2d.body_exited.connect(on_body_exited)
+	area_2d_2.body_entered.connect(on_player_die)
 
 
 func _process(_delta):
@@ -22,7 +23,6 @@ func _process(_delta):
 		velocity_component.accelerate_in_direction_with_gravity(movement_x)
 		handle_velocity()
 		velocity_component.move(self)
-		check_ray_cast_collision()
 
 
 func on_body_exited(_body: Node2D):
@@ -52,8 +52,7 @@ func restart_level():
 	get_tree().reload_current_scene()
 
 
-func check_ray_cast_collision():
-	if ray_cast_2d.is_colliding():
-		var collider = ray_cast_2d.get_collider()
-		if is_rigid and collider.is_in_group("player") and velocity_component.velocity != Vector2.ZERO:
+func on_player_die(_body: Node2D):
+	if _body.is_in_group("player"):
+		if is_rigid and velocity_component.velocity != Vector2.ZERO:
 			restart_level()

@@ -11,7 +11,7 @@ size = Vector2(17, 3)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gpeym"]
 radius = 8.0
-height = 20.0
+height = 22.0
 
 [sub_resource type="Animation" id="Animation_c41nm"]
 length = 0.001
@@ -263,6 +263,7 @@ collision_layer = 0
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DangerArea"]
+position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_gpeym")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

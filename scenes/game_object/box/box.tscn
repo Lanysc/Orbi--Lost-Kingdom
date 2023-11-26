@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://biq2dy7vg7x0l"]
+[gd_scene load_steps=7 format=3 uid="uid://biq2dy7vg7x0l"]
 
 [ext_resource type="Script" path="res://scenes/game_object/box/box.gd" id="1_6h8bh"]
 [ext_resource type="Script" path="res://scenes/component/velocity/velocity_component.gd" id="1_v0u2a"]
@@ -9,6 +9,9 @@ size = Vector2(18, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_judu4"]
 size = Vector2(18, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nbed7"]
+size = Vector2(18, 4.5)
 
 [node name="Box" type="CharacterBody2D" groups=["box"]]
 collision_layer = 8
@@ -35,7 +38,10 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_judu4")
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(0, -4)
-target_position = Vector2(0, 14)
+[node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 0
 collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(0, 9.75)
+shape = SubResource("RectangleShape2D_nbed7")
