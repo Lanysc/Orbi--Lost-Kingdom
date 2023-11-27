@@ -1,8 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://biq2dy7vg7x0l"]
+[gd_scene load_steps=12 format=3 uid="uid://biq2dy7vg7x0l"]
 
 [ext_resource type="Script" path="res://scenes/game_object/box/box.gd" id="1_6h8bh"]
 [ext_resource type="Script" path="res://scenes/component/velocity/velocity_component.gd" id="1_v0u2a"]
 [ext_resource type="Texture2D" uid="uid://tsv8mmhrf6vv" path="res://resources/assets/other/Tiles/tile_0026.png" id="2_edwpw"]
+[ext_resource type="AudioStream" uid="uid://27j07rqrelmj" path="res://resources/assets/sfx/punch-1-166694.mp3" id="4_twhkl"]
+[ext_resource type="AudioStream" uid="uid://sx6s3jvqybjj" path="res://resources/assets/sfx/punch-3-166696.mp3" id="5_tbyvj"]
+[ext_resource type="AudioStream" uid="uid://clwmy75pb81tb" path="res://resources/assets/sfx/punch-6-166699.mp3" id="6_grey0"]
+[ext_resource type="AudioStream" uid="uid://btsqpu56q747" path="res://resources/assets/sfx/punch-140236.mp3" id="7_wdjtp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ah14j"]
 size = Vector2(18, 18)
@@ -12,6 +16,19 @@ size = Vector2(18, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nbed7"]
 size = Vector2(18, 4.5)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4lftm"]
+streams_count = 4
+random_pitch = 1.0
+random_volume_offset_db = 3.66
+stream_0/stream = ExtResource("4_twhkl")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("5_tbyvj")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("6_grey0")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("7_wdjtp")
+stream_3/weight = 1.0
 
 [node name="Box" type="CharacterBody2D" groups=["box"]]
 collision_layer = 8
@@ -45,3 +62,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(0, 9.75)
 shape = SubResource("RectangleShape2D_nbed7")
+
+[node name="DropFx" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_4lftm")
+volume_db = -15.0
+bus = &"sfx"

@@ -14,6 +14,7 @@ enum State {
 @onready var animation_player = $AnimationPlayer
 @onready var interact_area = %InteractArea
 @onready var danger_area = $DangerArea
+@onready var jumpfx = $Jumpfx
 
 var jump_count: int = 0
 var current_state: State = State.IDLE
@@ -127,6 +128,7 @@ func verify_vertical_input():
 	if is_on_floor():
 		jump_count = 0
 	if Input.is_action_just_pressed("jump") and jump_count < max_jumps and is_on_floor():
+		jumpfx.play()
 		current_state = State.JUMP
 		jump_count += 1
 		velocity_component.jump()

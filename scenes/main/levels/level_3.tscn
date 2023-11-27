@@ -620,17 +620,17 @@ position = Vector2(199, 205)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "Ao cruzar o portal, a saudade me inundou.",
+"dialog": "veio um quentinho no coração, uma falta de casa.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "Flashbacks de uma mesa de jantar, risos, o calor de uma luz suave...",
+"dialog": "Será que eu tô lembrando do meu canto?",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
-"dialog": "\"Era minha casa?\"",
+"dialog": "Preciso juntar mais dessas lembrança pra entender.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

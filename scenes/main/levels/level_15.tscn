@@ -40,17 +40,17 @@ position = Vector2(81, 137)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "A memória dos Guardiões de Qubópolis emergiu quando passei pelo portal.",
-"faceset": "res://resources/assets/player/player_face.png",
-"title": "Orbi"
-},
-1: {
 "dialog": "\"Eu sou o guardião escolhido\"",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
+1: {
+"dialog": "eu já sabia que tinha muito chão pela frente",
+"faceset": "res://resources/assets/player/player_face.png",
+"title": "Orbi"
+},
 2: {
-"dialog": "Cada enigma que eu resolvia, trazia equilíbrio e luz a este reino.",
+"dialog": "\"Isso aqui nunca acaba.\" Olhei pro infinito, ciente de que cada fim é só a deixa pra uma nova aventura.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

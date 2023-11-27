@@ -38,12 +38,12 @@ position = Vector2(199, 205)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "Onde estou?",
+"dialog": "Ô trem, onde que eu fui parar agora?",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "minha mente ainda turva pela confusão.",
+"dialog": "O portal que eu tinha atravessado sumiu sem deixar rastro",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

@@ -627,17 +627,17 @@ position = Vector2(231, 206)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "Uma sensação de vazio me preencheu ao passar pelo portal. ",
+"dialog": "Cada portal que eu passava, um aperto no coração vinha junto.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "Havia dor nessa memória, uma perda que eu não conseguia compreender.",
+"dialog": "O que foi que eu perdi, meu Deus?",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
-"dialog": "O que eu perdi?",
+"dialog": "Não lembrava não, mas sentia que era coisa importante.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

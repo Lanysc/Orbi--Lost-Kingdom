@@ -638,17 +638,17 @@ position = Vector2(227, 231)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "vi-me em um laboratório, cercado por engenhocas e mapas de mundos distantes.",
+"dialog": "me vi no meio de um monte de tralha que parecia coisa de outro mundo.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "\"Isso foi algo que eu criei?\" ",
+"dialog": "Fui eu que montei isso?",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
-"dialog": " A ideia de uma missão começou a tomar forma em minha mente.",
+"dialog": "Um objetivo antigo começou a clarear na minha cabeça.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

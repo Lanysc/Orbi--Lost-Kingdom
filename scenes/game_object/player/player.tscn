@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://yc6pllgordab"]
+[gd_scene load_steps=16 format=3 uid="uid://yc6pllgordab"]
 
 [ext_resource type="Script" path="res://scenes/game_object/player/player.gd" id="1_qecir"]
 [ext_resource type="PackedScene" uid="uid://qxd1imapqwdf" path="res://scenes/component/velocity/velocity_component.tscn" id="1_rqdbq"]
 [ext_resource type="Texture2D" uid="uid://cp3pudcbxv6tb" path="res://resources/assets/player/Idle (64x32).png" id="3_6nl5v"]
 [ext_resource type="Texture2D" uid="uid://cg4g0gwpnprwi" path="res://resources/assets/player/Run (64x32).png" id="4_jm0fh"]
 [ext_resource type="Texture2D" uid="uid://p8c5xsyf1726" path="res://resources/assets/player/Attack (64x32).png" id="5_ep588"]
+[ext_resource type="AudioStream" uid="uid://dur5xqhn36rry" path="res://resources/assets/sfx/cartoon-jump-6462.mp3" id="6_arn3s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qc3n6"]
 size = Vector2(17, 3)
@@ -275,3 +276,8 @@ libraries = {
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 1)
 shape = SubResource("RectangleShape2D_axltu")
+
+[node name="Jumpfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_arn3s")
+volume_db = -20.0
+bus = &"sfx"

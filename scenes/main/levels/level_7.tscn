@@ -631,17 +631,17 @@ position = Vector2(234, 226)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "Senti um chamado, um desejo ardente de explorar e descobrir. ",
+"dialog": "acendeu aquela vontade de descobrir coisa nova.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "Eu sempre fui um aventureiro",
+"dialog": "Eu tava na busca de quê mesmo?",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
-"dialog": "percebi, com visões de mapas estelares e diários de viagem enchendo minha mente.",
+"dialog": "As aventuras que eu tinha vivido começaram a voltar pra memória.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

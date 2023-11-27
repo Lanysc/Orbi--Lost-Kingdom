@@ -653,17 +653,12 @@ position = Vector2(219, 235)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "Ao cruzar o portal, tudo se encaixou.",
+"dialog": "Vi o que parecia ser o coração desses mundos todos, pulsando com uma energia danada.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "Eu não estava apenas explorando; eu estava curando.",
-"faceset": "res://resources/assets/player/player_face.png",
-"title": "Orbi"
-},
-2: {
-"dialog": "Cada enigma que eu resolvia, trazia equilíbrio e luz a este reino.",
+"dialog": "Tenho que botar isso pra funcionar de novo.",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }

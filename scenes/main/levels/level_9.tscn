@@ -636,17 +636,17 @@ position = Vector2(236, 204)
 hud = NodePath("../HUD")
 data = {
 0: {
-"dialog": "\"Eu entendo agora\", refleti. Minha jornada não foi um acidente.",
+"dialog": "Passei por um portal e vi os guardiões, e eles todos contavam comigo. ",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 1: {
-"dialog": "Eu fui escolhido para explorar esses mundos",
+"dialog": "Eu prometi cuidar desse trem todo",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 },
 2: {
-"dialog": "Mas, Por quê?",
+"dialog": " Era uma promessa das antigas, e eu tinha que cumprir",
 "faceset": "res://resources/assets/player/player_face.png",
 "title": "Orbi"
 }
