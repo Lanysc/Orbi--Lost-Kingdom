@@ -1,9 +1,10 @@
+Label
+HBoxContainer
 AudioStreamPlayer2D
 CollisionShape2D
 Area2D
 Node2D
 VBoxContainer
-Label
 Container
 CenterContainer
 Control
@@ -19,7 +20,6 @@ Button
 RichTextLabel
 TextureRect
 ColorRect
-HBoxContainer
 RayCast2D
 Camera2D
 StaticBody2D

@@ -23,3 +23,4 @@ res://scenes/main/level_selector/level_selector_2.tscn
 res://scenes/game_object/box/box.gd
 res://autoload/event_manager.tscn
 res://autoload/event_manager.gd
+res://scenes/ui/option_menu/options_menu.tscn
