@@ -8,3 +8,5 @@ res://scenes/game_object/player/player.tscn
 res://autoload/event_manager.tscn
 res://scenes/ui/option_menu/options_menu.tscn
 res://scenes/main/levels/level_3.tscn
+res://scenes/main/levels/level_5.tscn
+res://scenes/main/levels/level_8.tscn
