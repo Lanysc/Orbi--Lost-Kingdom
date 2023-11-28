@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2bvxtbo08efs"]
+[gd_scene load_steps=10 format=3 uid="uid://d2bvxtbo08efs"]
 
 [ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_8ahxi"]
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_wspyv"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://yc6pllgordab" path="res://scenes/game_object/player/player.tscn" id="3_pa8d7"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="4_3uyb0"]
 [ext_resource type="PackedScene" uid="uid://cfik4kpx8cmwx" path="res://scenes/game_object/dialog/story/story_dialog_manager.tscn" id="5_jk4os"]
+[ext_resource type="Texture2D" uid="uid://bkyla5qs20wnu" path="res://resources/assets/keyboard/Keyboard Extras.png" id="7_rbbsm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_1457h")
@@ -623,3 +624,20 @@ data = {
 "title": "Orbi"
 }
 }
+
+[node name="Keys" type="Node2D" parent="."]
+position = Vector2(34, -11)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Keys"]
+position = Vector2(251, 276)
+texture = ExtResource("7_rbbsm")
+hframes = 4
+vframes = 8
+frame = 10
+
+[node name="Label" type="Label" parent="Keys/Sprite2D2"]
+offset_left = 23.0
+offset_top = -7.0
+offset_right = 63.0
+offset_bottom = 8.0
+text = "Pular"

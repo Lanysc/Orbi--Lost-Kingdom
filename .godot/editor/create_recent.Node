@@ -1,15 +1,15 @@
 Label
+Node2D
+Sprite2D
 HBoxContainer
 AudioStreamPlayer2D
 CollisionShape2D
 Area2D
-Node2D
 VBoxContainer
 Container
 CenterContainer
 Control
 AnimationPlayer
-Sprite2D
 TileMap
 ParallaxLayer
 ParallaxBackground

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701109302
+::res://::1701176730
 default_bus_layout.tres::AudioBusLayout::248145628365671683::1700141485::0::1::::<><>::
 icon.svg::CompressedTexture2D::6850954975639949343::1693493938::1701109300::1::::<><>::
 ::res://addons/::1701106631
@@ -113,14 +113,14 @@ README.md::TextFile::-1::1701106631::0::1::::<><>::
 Transit.gd::GDScript::-1::1701106631::0::1::::<>Control<>::
 Transit.tscn::PackedScene::4670441788520292409::1701106631::0::1::::<><>::res://addons/transit/Transit.gd
 TransitPlugin.gd::GDScript::-1::1701106631::0::1::::<>EditorPlugin<>::
-::res://autoload/::1701106631
-event_manager.gd::GDScript::-1::1700850147::0::1::::Event<>Node<>::
-event_manager.tscn::PackedScene::4272232680482542624::1700856195::0::1::::<><>::res://autoload/event_manager.gd
+::res://autoload/::1701114000
+event_manager.gd::GDScript::-1::1701113929::0::1::::Event<>Node<>::
+event_manager.tscn::PackedScene::4272232680482542624::1701114000::0::1::::<><>::res://autoload/event_manager.gd<>uid://lk035eeq114d::::res://resources/assets/sfx/error-126627.mp3
 music_player.gd::GDScript::-1::1700141967::0::1::::<>AudioStreamPlayer<>::
 music_player.tscn::PackedScene::4345628090864057202::1701106631::0::1::::<><>::uid://d7v47yiwmgiq
 ::res://resources/::1700675677
 tileset.tres::TileSet::3087362036500141374::1700141906::0::1::::<><>::uid://cmp5myimsxk5h
-::res://resources/assets/::1701112241
+::res://resources/assets/::1701176766
 ::res://resources/assets/audio/::1700141547
 click1.ogg::AudioStreamOggVorbis::1275201715753585260::1700141527::1700141528::1::::<><>::
 click2.ogg::AudioStreamOggVorbis::1846770219707372924::1700141527::1700141528::1::::<><>::
@@ -166,6 +166,9 @@ EquipmentPro.otf::FontFile::7258636045171600839::1699971377::1699971377::1::::<>
 EquipmentPro.svg::CompressedTexture2D::4804978174014012278::1699971377::1701109300::1::::<><>::
 EquipmentPro.ttf::FontFile::121084670041859121::1699971377::1699971377::1::::<><>::
 EquipmentPro.woff::FontFile::2072873012539295874::1699971377::1699971377::1::::<><>::
+::res://resources/assets/keyboard/::1701176775
+Keyboard Extras.png::CompressedTexture2D::3138523674363592798::1701176775::1701176776::1::::<><>::
+Keyboard Letters and Symbols.png::CompressedTexture2D::3839232519414292625::1701176775::1701176776::1::::<><>::
 ::res://resources/assets/other/::1699642446
 ::res://resources/assets/other/Free/::1699642446
 20 Enemies.png::CompressedTexture2D::2651424096793683908::1569880642::1699641505::1::::<><>::
@@ -551,7 +554,7 @@ player_face.png::CompressedTexture2D::9038243017247005498::1700831632::170083163
 Run (64x32).png::CompressedTexture2D::5254250680711662816::1700762915::1700762916::1::::<><>::
 ::res://resources/assets/portal/::1700852551
 Green Portal Sprite Sheet.png::CompressedTexture2D::4816283959854110294::1700852551::1700852551::1::::<><>::
-::res://resources/assets/sfx/::1701113509
+::res://resources/assets/sfx/::1701113665
 cartoon-jump-6462.mp3::AudioStreamMP3::8599996780518323382::1701112250::1701113665::1::::<><>::
 error-126627.mp3::AudioStreamMP3::794290566691350677::1701113509::1701113665::1::::<><>::
 punch-1-166694.mp3::AudioStreamMP3::1961751671898042301::1701112250::1701113665::1::::<><>::
@@ -612,9 +615,9 @@ ground_tile_map.tscn::PackedScene::9016351881506678402::1701106631::0::1::::<><>
 velocity_component.gd::GDScript::-1::1696016682::0::1::::VelocityComponent<>Node<>::
 velocity_component.tscn::PackedScene::1170731206916873267::1695843387::0::1::::<><>::res://scenes/component/velocity/velocity_component.gd
 ::res://scenes/game_object/::1700658589
-::res://scenes/game_object/box/::1701113634
-box.gd::GDScript::-1::1701113543::0::1::::<>CharacterBody2D<>::
-box.tscn::PackedScene::2982607504006317625::1701113634::0::1::::<><>::res://scenes/game_object/box/box.gd<>res://scenes/component/velocity/velocity_component.gd<>uid://tsv8mmhrf6vv::::res://resources/assets/other/Tiles/tile_0026.png<>uid://27j07rqrelmj::::res://resources/assets/sfx/punch-1-166694.mp3<>uid://sx6s3jvqybjj::::res://resources/assets/sfx/punch-3-166696.mp3<>uid://clwmy75pb81tb::::res://resources/assets/sfx/punch-6-166699.mp3<>uid://btsqpu56q747::::res://resources/assets/sfx/punch-140236.mp3<>uid://lk035eeq114d::::res://resources/assets/sfx/error-126627.mp3
+::res://scenes/game_object/box/::1701114000
+box.gd::GDScript::-1::1701113980::0::1::::<>CharacterBody2D<>::
+box.tscn::PackedScene::2982607504006317625::1701114000::0::1::::<><>::res://scenes/game_object/box/box.gd<>res://scenes/component/velocity/velocity_component.gd<>uid://tsv8mmhrf6vv::::res://resources/assets/other/Tiles/tile_0026.png<>uid://27j07rqrelmj::::res://resources/assets/sfx/punch-1-166694.mp3<>uid://sx6s3jvqybjj::::res://resources/assets/sfx/punch-3-166696.mp3<>uid://clwmy75pb81tb::::res://resources/assets/sfx/punch-6-166699.mp3<>uid://btsqpu56q747::::res://resources/assets/sfx/punch-140236.mp3
 ::res://scenes/game_object/dialog/::1700507697
 ::res://scenes/game_object/dialog/sign/::1701106631
 sign_dialog_manager.gd::GDScript::-1::1701106631::0::1::::<>Node2D<>::
@@ -631,9 +634,9 @@ gate.tscn::PackedScene::7081662804849768889::1700596098::0::1::::<><>::res://sce
 ::res://scenes/game_object/key/::1700856195
 key.gd::GDScript::-1::1700854521::0::1::::<>Area2D<>::
 key.tscn::PackedScene::7421285565033567094::1700856195::0::1::::<><>::res://scenes/game_object/key/key.gd<>uid://dtnqaqa4heyac
-::res://scenes/game_object/player/::1701113634
-player.gd::GDScript::-1::1701113631::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1690570611546923637::1701113634::0::1::::<><>::res://scenes/game_object/player/player.gd<>uid://qxd1imapqwdf::::res://scenes/component/velocity/velocity_component.tscn<>uid://cp3pudcbxv6tb::::res://resources/assets/player/Idle (64x32).png<>uid://cg4g0gwpnprwi::::res://resources/assets/player/Run (64x32).png<>uid://p8c5xsyf1726::::res://resources/assets/player/Attack (64x32).png<>uid://dur5xqhn36rry::::res://resources/assets/sfx/cartoon-jump-6462.mp3<>uid://lk035eeq114d::::res://resources/assets/sfx/error-126627.mp3
+::res://scenes/game_object/player/::1701114000
+player.gd::GDScript::-1::1701113977::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1690570611546923637::1701114000::0::1::::<><>::res://scenes/game_object/player/player.gd<>uid://qxd1imapqwdf::::res://scenes/component/velocity/velocity_component.tscn<>uid://cp3pudcbxv6tb::::res://resources/assets/player/Idle (64x32).png<>uid://cg4g0gwpnprwi::::res://resources/assets/player/Run (64x32).png<>uid://p8c5xsyf1726::::res://resources/assets/player/Attack (64x32).png<>uid://dur5xqhn36rry::::res://resources/assets/sfx/cartoon-jump-6462.mp3
 ::res://scenes/game_object/pressure_plate/::1701106631
 pressure_plate.gd::GDScript::-1::1701106631::0::1::::<>CharacterBody2D<>::
 pressure_plate.tscn::PackedScene::5070066828727239482::1699969453::0::1::::<><>::res://scenes/game_object/pressure_plate/pressure_plate.gd<>uid://cdtbna8l7myem
@@ -641,13 +644,13 @@ pressure_plate.tscn::PackedScene::5070066828727239482::1699969453::0::1::::<><>:
 level_final.gd::GDScript::-1::1701106631::0::1::::<>Control<>::
 level_final.tscn::PackedScene::4447604801057336646::1701106631::0::1::::<><>::res://scenes/main/level_final.gd<>uid://bsoqs3s1slh2m
 level_tester.tscn::PackedScene::8708370308795889853::1700856249::0::1::::<><>::uid://4rkrho6cqbxk
-::res://scenes/main/levels/::1701113634
+::res://scenes/main/levels/::1701114015
 level_1.tscn::PackedScene::5565635392139308513::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://d1pt865t1fjqw::::res://scenes/component/tile_map/ground_tile_map.tscn<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_2.tscn::PackedScene::9057742337327408996::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_3.tscn::PackedScene::5405762002355914908::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://dih8fo0d6qkr8::::res://scenes/component/tile_map/danger_tile_map.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_4.tscn::PackedScene::5250563183261917300::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_5.tscn::PackedScene::3877246000039648718::1701112801::0::1::::<><>::uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
-level_6.tscn::PackedScene::350528875396492041::1701113634::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://dih8fo0d6qkr8::::res://scenes/component/tile_map/danger_tile_map.tscn<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
+level_6.tscn::PackedScene::350528875396492041::1701114015::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://dih8fo0d6qkr8::::res://scenes/component/tile_map/danger_tile_map.tscn<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_7.tscn::PackedScene::4972105794577645860::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://dih8fo0d6qkr8::::res://scenes/component/tile_map/danger_tile_map.tscn<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_8.tscn::PackedScene::2764141899205237848::1701112802::0::1::::<><>::uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://dih8fo0d6qkr8::::res://scenes/component/tile_map/danger_tile_map.tscn<>uid://d1pt865t1fjqw::::res://scenes/component/tile_map/ground_tile_map.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
 level_9.tscn::PackedScene::4712381296740490986::1701112801::0::1::::<><>::uid://4rkrho6cqbxk::::res://scenes/component/game_manager/game_manager_component.tscn<>uid://bsoqs3s1slh2m::::res://scenes/component/tile_map/background_tile_map.tscn<>uid://mqqv6g8ymerl::::res://scenes/component/level_manager/level_manager.tscn<>uid://cm6hgvjj0h3rb::::res://resources/assets/other/Tilemap/tilemap_packed.png<>uid://yc6pllgordab::::res://scenes/game_object/player/player.tscn<>uid://biq2dy7vg7x0l::::res://scenes/game_object/box/box.tscn<>uid://d1pt865t1fjqw::::res://scenes/component/tile_map/ground_tile_map.tscn<>uid://ceh8i3qauoesw::::res://scenes/game_object/pressure_plate/pressure_plate.tscn<>uid://c75n7mhwpje8p::::res://scenes/game_object/gate/gate.tscn<>uid://cfik4kpx8cmwx::::res://scenes/game_object/dialog/story/story_dialog_manager.tscn
@@ -673,9 +676,9 @@ button_theme.tres::Theme::2968071673565867349::1700135300::0::1::::<><>::uid://b
 level_final.tscn::PackedScene::4447604801057336646::1701106631::0::1::::<><>::uid://bsoqs3s1slh2m
 main_menu.gd::GDScript::-1::1701106631::0::1::::<>Control<>::
 main_menu.tscn::PackedScene::5245881633199535711::1701106631::0::1::::<><>::res://scenes/ui/main_menu/main_menu.gd<>uid://y28u6ekwic8
-::res://scenes/ui/option_menu/::1700488057
+::res://scenes/ui/option_menu/::1701115106
 options_menu.gd::GDScript::-1::1700145279::0::1::::<>CanvasLayer<>::
-options_menu.tscn::PackedScene::51244454652909589::1700488057::0::1::::<><>::res://scenes/ui/option_menu/options_menu.gd<>uid://bse4o0dt8fdb4
+options_menu.tscn::PackedScene::51244454652909589::1701115106::0::1::::<><>::res://scenes/ui/option_menu/options_menu.gd<>uid://bse4o0dt8fdb4::::res://resources/theme/theme.tres<>uid://rv8tplednfej::::res://scenes/ui/vignett/vignett.tscn<>uid://cmtlcxe3a4jri::::res://scenes/ui/sound_button/sound_button.tscn
 ::res://scenes/ui/pause_menu/::1700856195
 pause_menu.gd::GDScript::-1::1700836136::0::1::::<>CanvasLayer<>::
 pause_menu.tscn::PackedScene::2924780063165595700::1700856195::0::1::::<><>::res://scenes/ui/pause_menu/pause_menu.gd<>uid://cmtlcxe3a4jri

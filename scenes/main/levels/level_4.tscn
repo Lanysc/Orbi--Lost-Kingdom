@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cg2oaj3se8st5"]
+[gd_scene load_steps=13 format=3 uid="uid://cg2oaj3se8st5"]
 
 [ext_resource type="PackedScene" uid="uid://bsoqs3s1slh2m" path="res://scenes/component/tile_map/background_tile_map.tscn" id="1_1fqki"]
 [ext_resource type="PackedScene" uid="uid://4rkrho6cqbxk" path="res://scenes/component/game_manager/game_manager_component.tscn" id="1_ciupm"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://biq2dy7vg7x0l" path="res://scenes/game_object/box/box.tscn" id="4_fnvsq"]
 [ext_resource type="PackedScene" uid="uid://mqqv6g8ymerl" path="res://scenes/component/level_manager/level_manager.tscn" id="5_n570k"]
 [ext_resource type="PackedScene" uid="uid://cfik4kpx8cmwx" path="res://scenes/game_object/dialog/story/story_dialog_manager.tscn" id="6_agg4e"]
+[ext_resource type="Texture2D" uid="uid://bux0umcmdwafh" path="res://resources/assets/keyboard/Keyboard Letters and Symbols.png" id="8_1us6v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qh2k"]
 texture = ExtResource("2_rj41k")
@@ -1204,3 +1205,20 @@ data = {
 "title": "Orbi"
 }
 }
+
+[node name="Keys" type="Node2D" parent="."]
+position = Vector2(2, -8)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Keys"]
+position = Vector2(255, 276)
+texture = ExtResource("8_1us6v")
+hframes = 8
+vframes = 14
+frame = 20
+
+[node name="Label" type="Label" parent="Keys/Sprite2D2"]
+offset_left = 12.0
+offset_top = -7.0
+offset_right = 52.0
+offset_bottom = 8.0
+text = "Pegar / Soltar"
