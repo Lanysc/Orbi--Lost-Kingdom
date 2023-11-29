@@ -17,7 +17,7 @@ enum State {
 var movement_x:= 0.0
 var is_rigid := true
 var current_state: State = State.GROUND
-
+var is_player_below: = false
 
 func _ready():
 	area_2d.body_exited.connect(on_body_exited)
@@ -36,8 +36,14 @@ func _process(_delta):
 		velocity_component.accelerate_in_direction_with_gravity(movement_x)
 		handle_velocity()
 		velocity_component.move(self)
+	
+	if is_player_below:
+		verify_player_below()
+
 
 func on_body_exited(_body: Node2D):
+	if _body.is_in_group("player"):
+		is_player_below = false
 	if !is_picked_up:
 		set_collision_layer_value(4, true)
 		set_collision_layer_value(3, false)
@@ -62,5 +68,9 @@ func change_state():
 
 func on_player_die(_body: Node2D):
 	if _body.is_in_group("player"):
-		if is_rigid and velocity_component.velocity != Vector2.ZERO:
+		is_player_below = true
+
+
+func verify_player_below():
+	if is_rigid and velocity_component.velocity != Vector2.ZERO:
 			EventManager.level_restart()
