@@ -239,7 +239,7 @@ script = ExtResource("1_qecir")
 [node name="VelocityComponent" parent="." instance=ExtResource("1_rqdbq")]
 max_speed = 80
 acceleration = 15.0
-jump_height = 30.0
+jump_height = 35.0
 jump_time_to_descent = 0.3
 
 [node name="Visuals" type="Node2D" parent="."]

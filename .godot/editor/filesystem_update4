@@ -13,3 +13,11 @@ res://scenes/main/levels/level_7.tscn
 res://scenes/main/levels/level_8.tscn
 res://scenes/main/levels/level_9.tscn
 res://scenes/game_object/box/box.gd
+res://scenes/main/levels/level_15.tscn
+res://scenes/main/levels/level_13.tscn
+res://scenes/main/levels/level_14.tscn
+res://scenes/component/tile_map/danger_tile_map.tscn
+res://scenes/main/levels/level_12.tscn
+res://scenes/main/levels/level_11.tscn
+res://scenes/main/levels/level_10.tscn
+res://scenes/game_object/key/key.tscn
