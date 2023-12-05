@@ -1,4 +1,3 @@
 # Orbi--Lost-Kingdom
-Jogo criado para materia de Desenvolvimento de jogos
-Godot 4.1
-Puzzle
+Jogo de puzzle criado para materia de Desenvolvimento de jogos usando Godot 4.1
+
